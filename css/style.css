@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    margin: auto;
+    width: 10%;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+header {
+    background: #fff;
+}
+
+.nav-header ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-header li{
+    display: inline-block;
+    padding: 5px 30px;
+}

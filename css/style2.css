@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    padding: 5px 13px;
+    background-color: #FD7558;
+    border: solid;
+    font-size: 15pt;
+    color: white;
+    cursor: pointer;
+    transition: .7s;
+}
+
+button :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+header {
+    background: #fff;
+}
+
+header .logo{
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-header .nav-list{
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    padding: 40px auto;
+}
+
+.nav-header .nav-list a {
+    font-size: 16px;
+}
+
+.nav-header .nav-list :hover{
+    font-weight: 900;
+}
+
+.selected-list {
+    font-weight: 900;
+    color: #FD7558;
+    border-bottom: 5px solid #FD7558;
+}
+
+.nav-header2 {
+    width: 50%;
+    display: inline-block;
+    background-color: #ffecaa;
+}
+
+.nav-header2 li {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.nav-body2 {
+    float: left;
+    width: 50%;
+    height: 80vh;
+    background-color: #FD7558;
+    border-bottom-right-radius: 150px;
+}
+
+.nav-body2 img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-body2 {
+        display: none;
+    }
+
+    .nav-header2 {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #ffecaa;
+    }
+
+    .account {
+        width: 100%;
+        min-width: 350px;
+    }
+}
+
+.account {
+    display: inline-block;
+    padding: 10px 30px;
+    width: 50%;
+}
+
+.account-button {
+    display: flex;
+    position: relative;
+    float: right;
+    flex-direction: column;
+    justify-content: right;
+    margin-top: 40px;
+}
+
+.account-button :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+}
+
+.account-button button {
+    min-width: 200px;
+    display: block;
+    max-width: 300px;
+}
+
+.account-button button :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+}
+
+
+.account h1, h2 {
+    border-bottom: black solid 1px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.account p {
+    padding-top: 10px;
+}
+
+.tab {
+    position: absolute;
+    text-align: left;
+    left: 52.5%;
+    margin-top: 10px;
+    height: 70px;
+    border-collapse: collapse;
+    border-spacing: none;
+    width: 580px;
+  
+    
+}
+
+.tab thead th, tbody td {
+    padding-left: 10px;
+    height: 35px;
+}
+
+.tab thead th {
+    background-color: #FD7558;
+    color: #ffecaa;
+}
+
+.tab tbody td {
+    border-bottom: solid;
+    border-width: thin;
+    border-color: #FD7558;
+}
+
+.Rbutton {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: right;
+    margin-top: 280px;
+}
+
+.Rbutton :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+}
+
+.Rbutton button {
+    min-width: 200px;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+.Rbutton button :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+}
+
+
+
+
+

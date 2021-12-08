@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oantri</title>
+    <link rel="stylesheet" href="../css/components.css">
+
+    <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+    <div class="container">
+
+        <!-- H E A D E R    P I L I H    S A L A H    S A T U 
+            selain itu, hapus -->
+
+
+
+
+    <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="../outlet.html" class="outlet">Outlet</a></li>
+                <li><a href="../about.html" class="about">Tentang Kami</a></li>
+                <li><a href="../homepage.html" class="homepage">Beranda</a></li>
+                <li><a href="../masuk.html" class="masuk">Akun</a></li>
+                <li><a href="../daftar.html" class="daftar">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+
+
+
+    <!-- HEADER VERSI 2: Setelah user masuk/daftar, ada bagian akun & cari -->
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="../outlet.html" class="outlet">Outlet</a></li>
+                <li><a href="../about.html" class="about">Tentang Kami</a></li>
+                <li><a href="../homepage.html" class="homepage">Beranda</a></li>
+                <li><a href="../profile.html" class="profile">Akun</a></li>
+            </ul>
+        </nav>
+        <!-- Nah ini icon buat "cari" -->
+        <a href="../outlet.html" class="cari">
+            <i class="fa fa-search"></i>
+        </a>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+
+
+
+    <!-- HEADER VERSI 3: Buat business partner -->
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <p class="partner">Business Partner OANTRI</p>
+        <nav>
+            <ul id="menuList">
+                <li><a href="../b_profil.html" class="profil">Profil</a></li>
+                <li><a href="../b_antrian.html" class="homepage">Antrian</a></li>
+                <li><a href="../b_pengaturan.html" class="pengaturan">Pengaturan</a></li>
+                <li><a href="../b_bantuan.html" class="profile">Bantuan</a></li>
+                <li><a href="../b_keluar.html" class="keluar">Keluar</a></li>
+            </ul>
+        </nav>
+        <!-- Nah ini icon buat "cari" -->
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+
+
+    <div class="body_container">
+        <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+            <!-- Kalau mau pake button, bisa langsung <button>text</button> ya gais -->
+            <button>Ini tombolnya bunda</button>
+    </div>
+    <!-- End body_container -->
+
+
+
+    </div>
+    <!-- End container -->
+
+
+
+    <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+    
+</body>
+</html>

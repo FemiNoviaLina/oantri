@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oantri</title>
+    <link rel="stylesheet" href="../css/masuk.css">
+
+
+</head>
+
+<body>
+    <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+    <div class="container">
+
+      
+    <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul>
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../outlet.html">Outlet</a></li>
+                <li><a href="../about.html">Tentang Kami</a></li>
+                <li><a href="../homepage.html">Beranda</a></li>
+                <li><a href="../masuk.html" class="active">Masuk</a></li>
+                <li><a href="../daftar.html" class="daftar">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+
+    <div class="body_container">
+        <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+            <!-- Kalau mau pake button, bisa langsung <button>text</button> ya gais -->
+            <button>Ini tombolnya bunda</button>
+    </div>
+    <!-- End body_container -->
+
+
+    </div>
+    <!-- End container -->
+
+
+
+    <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+    
+</body>
+</html>

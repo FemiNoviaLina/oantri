@@ -96,6 +96,7 @@ nav ul li a:hover {
     border: solid;
     color: #FD7558;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .daftar:hover {
@@ -106,60 +107,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 /* YAK SEGITU AJA */
-
-
-/* KHUSUS HEADER VERSI 2 */
-.cari {
-    padding-top: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #FD7558;
-    font-size: 24px;
-    margin: 0 50px;
-    width: 60px;
-}
-
-.cari:hover {
-    border-bottom: none;
-    color: #FD7558;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-/* YAK SEGITU AJA */
-
-
-/* KHUSUS HEADER VERSI 3 */
-.partner {
-    padding-left: 10px;
-    color: #FD7558;
-    font-family: 'Noto Sans';
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.keluar {
-    padding: 10px 20px;
-    background-color: #FFECAA;
-    border-color: #FD7558;
-    border: solid;
-    color: #FD7558;
-    cursor: pointer;
-}
-
-.keluar:hover {
-    border: solid;
-    border-color: #FD7558;
-    background-color: #FD7558;
-    color: #FFECAA;
-    text-decoration: none;
-}
-/* YAK SEGITU AJA */
-
-.body_container {
-    background-color: white;
-    /* atur aje bos */
-}
 
 .menu_icon {
     width: 27px;
@@ -178,7 +125,7 @@ button {
     transition: .7s;
 }
 
-button:hover {
+button :hover {
     border: solid;
     border-color: #FD7558;
     color: #FD7558;

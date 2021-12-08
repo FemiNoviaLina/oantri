@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0.7%;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #FD7558;
+}
+
+nav ul li a:hover {
+    border-color: #FD7558;
+    border-bottom: solid;
+    font-weight: 700;
+    color: #FD7558;
+}
+
+/* KHUSUS HEADER VERSI 1 */
+
+/* Ini buat nunjukin dia lagi di page mana */
+.masuk {
+    border-color: #FD7558;
+    border-bottom: solid;
+    font-weight: 700;
+    color: #FD7558;
+}
+
+.daftar {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-color: #FD7558;
+    border: solid;
+    color: #FD7558;
+    cursor: pointer;
+}
+
+.daftar:hover {
+    border: solid;
+    border-color: #FD7558;
+    background-color: #FD7558;
+    color: #FFF;
+    text-decoration: none;
+}
+/* YAK SEGITU AJA */
+
+/* KHUSUS HEADER VERSI 2 */
+
+.cari {
+    padding-top: 16px;
+    color: #FD7558;
+    font-size: 24px;
+}
+
+.cari:hover {
+    border-bottom: none;
+    color: #FD7558;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Ini buat nunjukin dia lagi di page mana */
+.profile {
+    border-color: #FD7558;
+    border-bottom: solid;
+    font-weight: 700;
+    color: #FD7558;
+}
+
+/* YAK SEGITU AJA */
+
+/* KHUSUS HEADER VERSI 3 */
+.partner {
+    padding-left: 10px;
+    color: #FD7558;
+    font-family: 'Noto Sans';
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.keluar {
+    padding: 10px 20px;
+    background-color: #FFECAA;
+    border-color: #FD7558;
+    border: solid;
+    color: #FD7558;
+    cursor: pointer;
+}
+
+.keluar:hover {
+    border: solid;
+    border-color: #FD7558;
+    background-color: #FD7558;
+    color: #FFECAA;
+    text-decoration: none;
+}
+
+/* Ini buat nunjukin dia lagi di page mana */
+.profil {
+    border-color: #FD7558;
+    border-bottom: solid;
+    font-weight: 700;
+    color: #FD7558;
+}
+/* YAK SEGITU AJA */
+
+.body_container {
+    /* atur aje bos */
+}
+
+.menu_icon {
+    width: 27px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Untuk button */
+button {
+    padding: 5px 15px;
+    background-color: #FD7558;
+    border: solid;
+    font-size: 18pt;
+    color: white;
+    cursor: pointer;
+    transition: .7s;
+}
+
+button :hover {
+    border: solid;
+    border-color: #FD7558;
+    color: #FD7558;
+    background-color: white;
+
+}
+
+/* Header versi responsive */
+@media only screen and (max-width: 768px) {    
+    nav ul{
+        width: 100%;
+        background-color: #FD7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    nav ul li a {
+        color: #FFF;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        background-color: #FFF;
+        color: #FD7558;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}

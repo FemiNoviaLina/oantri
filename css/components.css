@@ -26,7 +26,7 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p {
@@ -43,10 +43,11 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
     background-color: #FFECAA;
 }
+
 
 .logo {
     width: 80px;
@@ -71,7 +72,6 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 0 20px;
     color: #FD7558;
     padding-bottom: 20px;
 }
@@ -88,8 +88,7 @@ nav ul li a:hover {
     color: #FD7558;
 }
 
-/* KHUSUS HEADER VERSI 1 */
-.daftar {
+.outline-li {
     padding: 10px 20px;
     background-color: #FFECAA;
     border-color: #FD7558;
@@ -98,14 +97,13 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.daftar:hover {
+.outline-li:hover {
     border: solid;
     border-color: #FD7558;
     background-color: #FD7558;
     color: #FFECAA;
     text-decoration: none;
 }
-/* YAK SEGITU AJA */
 
 
 /* KHUSUS HEADER VERSI 2 */
@@ -137,23 +135,6 @@ nav ul li a:hover {
     font-size: 22px;
     font-weight: 600;
 }
-
-.keluar {
-    padding: 10px 20px;
-    background-color: #FFECAA;
-    border-color: #FD7558;
-    border: solid;
-    color: #FD7558;
-    cursor: pointer;
-}
-
-.keluar:hover {
-    border: solid;
-    border-color: #FD7558;
-    background-color: #FD7558;
-    color: #FFECAA;
-    text-decoration: none;
-}
 /* YAK SEGITU AJA */
 
 .body_container {
@@ -169,13 +150,14 @@ nav ul li a:hover {
 
 /* Untuk button */
 button {
-    padding: 5px 15px;
     background-color: #FD7558;
     border: solid;
-    font-size: 18pt;
     color: white;
     cursor: pointer;
     transition: .7s;
+    margin: 30px 0;
+    padding: 15px 50px;
+    font-size: 20px;
 }
 
 button:hover {
@@ -186,8 +168,7 @@ button:hover {
 
 }
 
-/* Header versi responsive */
-@media only screen and (max-width: 768px) {    
+@media only screen and (max-width: 1240px) {    
     nav ul{
         width: 100%;
         background-color: #FD7558;
@@ -204,14 +185,17 @@ button:hover {
         border: none;
     }
 
-    nav ul li a {
+    nav ul li a, .outline-li {
         color: #FFF;
         font-size: 16px;
+        background-color: #FD7558;
+        border: none;
     }
 
-    nav ul li a:hover {
-        background-color: #FFF;
-        color: #FD7558;
+    nav ul li a:hover, .outline-li:hover {
+        background-color: #FD7558;
+        color: #FFECAA;
+        border: none;
     }
 
     .menu_icon {

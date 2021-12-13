@@ -106,11 +106,6 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.body_container {
-    background-color: white;
-    /* atur aje bos */
-}
-
 .menu_icon {
     width: 27px;
     cursor: pointer;
@@ -134,48 +129,6 @@ button:hover {
     border-color: #fd7558;
     color: #fd7558;
     background-color: white;
-}
-
-@media only screen and (max-width: 1240px) {
-    nav ul {
-        width: 100%;
-        background-color: #fd7558;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    nav ul li a,
-    .outline-li {
-        color: #fff;
-        font-size: 16px;
-        background-color: #fd7558;
-        border: none;
-    }
-
-    nav ul li a:hover,
-    .outline-li:hover {
-        background-color: #fd7558;
-        color: #ffecaa;
-        border: none;
-    }
-
-    .menu_icon {
-        display: block;
-    }
-
-    #menuList {
-        overflow: hidden;
-        transition: 0.5s;
-    }
 }
 
 .body_container {
@@ -279,21 +232,56 @@ button:hover {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 1240px) {
+    nav ul {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    nav ul li a,
+    .outline-li {
+        color: #fff;
+        font-size: 16px;
+        background-color: #fd7558;
+        border: none;
+    }
+
+    nav ul li a:hover,
+    .outline-li:hover {
+        background-color: #fd7558;
+        color: #ffecaa;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
+
 /* Header versi responsive */
 @media only screen and (max-width: 768px) {
     .form_container {
-        padding: 20px;
+        padding: 40px;
         width: 400px;
     }
 
     .box_masuk input {
         width: 300px;
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    input .right {
-        width: 200px;
-        position: absolute;
     }
 }

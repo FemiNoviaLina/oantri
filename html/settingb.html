@@ -1,0 +1,303 @@
+<!-- BUSINESS PARTNER'S BANTUAN -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="stylesheet" href="../css/settingb.css" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+
+    <body>
+        <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+        <div class="container">
+            <!-- HEADER VERSI 3: Buat business partner -->
+            <header>
+                <img src="../img/logo.png" class="logo" />
+                <p class="partner">Business Partner Oantri</p>
+                <nav>
+                    <ul id="menuList">
+                        <!-- Kalo pas di pagenya, tambah class="active"-->
+                        <li><a href="../profile_b.html">Profil</a></li>
+                        <li><a href="../antrianb.html">Antrian</a></li>
+                        <li>
+                            <a href="../settingb.html" class="active"
+                                >Pengaturan</a
+                            >
+                        </li>
+                        <li><a href="../bantuanb.html">Bantuan</a></li>
+                        <li>
+                            <a href="../homepage.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nah ini icon buat "cari" -->
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+                <!-- Icon menu ini buat tampilan responsive-nya -->
+            </header>
+
+            <div class="body_container">
+                <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+                <!-- SECTION 1 SECTION 1 -->
+                <!-- <div class="set_container"> -->
+                <table class="tabell">
+                    <!-- BARIS PERTAMA -->
+                    <tr>
+                        <td style="width: 30%">
+                            <table>
+                                <tr>
+                                    <td><img src="../img/hand.png" /></td>
+                                    <td><h2>Informasi Partnership</h2></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 20%">
+                            <h3>Nama outlet</h3>
+                        </td>
+                        <td>
+                            <h3>: Finesse Auto Detailing</h3>
+                        </td>
+
+                        <!-- BARIS KEDUA -->
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Masa partnership</h3>
+                        </td>
+                        <td>
+                            <h3>: 17 Desember 2021 - 17 Desember 2022</h3>
+                            <!-- wkwk dedlen projeknya -->
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <p class="lunas">
+                                <br />
+                                Biaya partnership telah dibayar
+                                <i class="fa fa-check-circle"></i>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <!-- </div> -->
+
+                <!-- SECTION 2 SECTION 2 -->
+                <table class="tabell">
+                    <!-- BARIS PERTAMA -->
+                    <tr>
+                        <td style="width: 30%">
+                            <table>
+                                <tr>
+                                    <td><img src="../img/admin.png" /></td>
+                                    <td><h2>Informasi Admin</h2></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 20%">
+                            <h3>Admin ke</h3>
+                        </td>
+                        <td>
+                            <input type="number" value="1" />
+                        </td>
+
+                        <!-- BARIS KEDUA -->
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Nama Admin</h3>
+                        </td>
+                        <td>
+                            <input type="text" value="Ruth Sidabutar" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Email</h3>
+                        </td>
+                        <td>
+                            <input type="text" value="ruthieoantri@gmail.com" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KEEMPAT -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button>Simpan</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- SECTION 3 SECTION 3 -->
+                <table class="tabell">
+                    <!-- BARIS PERTAMA -->
+                    <tr>
+                        <td style="width: 30%">
+                            <table>
+                                <tr>
+                                    <td><img src="../img/add.png" /></td>
+                                    <td><h2>Buat Admin Baru</h2></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 20%">
+                            <h3>Admin ke</h3>
+                        </td>
+                        <td>
+                            <input type="number" value="2" />
+                        </td>
+
+                        <!-- BARIS KEDUA -->
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Nama Admin</h3>
+                        </td>
+                        <td>
+                            <input type="text" value="" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Email</h3>
+                        </td>
+                        <td>
+                            <input type="text" value="" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KEEMPAT -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button>Buat Admin Baru</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- SECTION 4 SECTION 4 -->
+                <table class="tabell">
+                    <!-- BARIS PERTAMA -->
+                    <tr>
+                        <td style="width: 30%">
+                            <table>
+                                <tr>
+                                    <td><img src="../img/lock.png" /></td>
+                                    <td>
+                                        <h2>Ubah Password</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 20%">
+                            <h3>Password Lama</h3>
+                        </td>
+                        <td>
+                            <input type="password" />
+                        </td>
+
+                        <!-- BARIS KEDUA -->
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Password Baru</h3>
+                        </td>
+                        <td>
+                            <input type="password" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>Konfirmasi Password Baru</h3>
+                        </td>
+                        <td>
+                            <input type="password" />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <p class="warning">
+                                Password yang baru akan diterapkan pada seluruh
+                                akun Admin
+                                <i class="fa fa-exclamation-triangle"></i>
+                            </p>
+                            <br />
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KELIMA -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button>Ubah Password</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End body_container -->
+        </div>
+        <!-- End container -->
+
+        <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

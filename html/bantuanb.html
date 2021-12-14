@@ -1,0 +1,192 @@
+<!-- BUSINESS PARTNER'S BANTUAN -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="stylesheet" href="../css/bantuanb.css" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+        <div class="container">
+            <!-- HEADER VERSI 3: Buat business partner -->
+            <header>
+                <img src="../img/logo.png" class="logo" />
+                <p class="partner">Business Partner Oantri</p>
+                <nav>
+                    <ul id="menuList">
+                        <!-- Kalo pas di pagenya, tambah class="active"-->
+                        <li><a href="../profile_b.html">Profil</a></li>
+                        <li><a href="../antrianb.html">Antrian</a></li>
+                        <li><a href="../settingb.html">Pengaturan</a></li>
+                        <li>
+                            <a href="../bantuanb.html" class="active"
+                                >Bantuan</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../homepage.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nah ini icon buat "cari" -->
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+                <!-- Icon menu ini buat tampilan responsive-nya -->
+            </header>
+
+            <div class="body_container">
+                <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+                <table>
+                    <tr>
+                        <td><img src="../img/faq.png" /></td>
+                        <td><h2>FAQ (Frequently Asked Questions)</h2></td>
+                    </tr>
+                </table>
+
+                <!-- BAGIAN DAFTAR FAQ -->
+                <div class="faq">
+                    <!-- Pertanyaan 1 -->
+                    <div class="faq_item" id="question1">
+                        <a class="faq_link" href="#question1">
+                            Bagaimana cara mengubah alamat outlet saya?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Anda bisa mengubah alamat outlet melalui 'Edit
+                                Profil Outlet' yang bisa ditemukan pada halaman
+                                profil. Pastikan Anda mengecek ulang data pada
+                                'Kota Lokasi Outlet', 'Alamat Outlet', serta
+                                'Detail Lokasi'.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 2 -->
+                    <div class="faq_item" id="question2">
+                        <a class="faq_link" href="#question2">
+                            Bagaimana cara mengubah kategori outlet saya?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Anda bisa mengubah kategori outlet melalui 'Edit
+                                Profil Outlet' yang bisa ditemukan pada halaman
+                                profil.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 3 -->
+                    <div class="faq_item" id="question3">
+                        <a class="faq_link" href="#question3">
+                            Bagaimana cara menambah layanan baru pada outlet
+                            kami di Oantri?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Anda dapat membuka opsi Antrian pada menu bagian
+                                atas lalu isi bagian 'Buat Layanan Baru' dan
+                                klik tombol 'Buat'.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 4 -->
+                    <div class="faq_item" id="question4">
+                        <a class="faq_link" href="#question4">
+                            Bagaimana cara menghapus layanan baru pada outlet
+                            kami di Oantri?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Anda dapat membuka opsi Antrian pada menu bagian
+                                atas lalu pilih layanan yang akan dihapus dan
+                                selanjutnya klik tombol 'Hapus Layanan Ini'.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pertanyaan 5 -->
+                    <div class="faq_item" id="question5">
+                        <a class="faq_link" href="#question5">
+                            Bagaimana cara melihat informasi mengenai
+                            partnership dengan Oantri?
+                            <i class="icon ion-md-add"></i>
+                            <i class="icon ion-md-remove"></i>
+                        </a>
+                        <div class="answer">
+                            <p>
+                                Anda dapat membuka opsi Pengaturan pada menu
+                                bagian atas lalu pilih 'Informasi Partnership'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END BAGIAN DAFTAR FAQ -->
+
+                <table>
+                    <tr>
+                        <td><img src="../img/chat.png" /></td>
+                        <td><h2>Hubungi Oantri</h2></td>
+                    </tr>
+                </table>
+
+                <div class="ask">
+                    <p>
+                        Ketik kendala atau pertanyaan pada kolom di bawah ini.
+                        Tim Customer Service kami akan segera menjawab setelah
+                        Anda mengirimnya.
+                    </p>
+                    <br />
+                    <textarea name="comment" value=""></textarea>
+                    <input type="submit" value="Kirim" class="button" />
+                </div>
+            </div>
+            <!-- End body_container -->
+        </div>
+        <!-- End container -->
+
+        <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

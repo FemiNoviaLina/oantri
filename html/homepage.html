@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/beranda.css">
+    <script src="https://kit.fontawesome.com/e5768abf45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+    <title>Oantri</title>
+</head>
+<body style="width: 100%;" >
+  
+
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul  id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../outlet.html">Outlet</a></li>
+                <li><a href="../html/about.html">Tentang Kami</a></li>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="../masuk.html">Masuk</a></li>
+                <li><a href="../daftar.html" class="outline-li">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+
+
+    <div class="page1">
+        <div class="div1"></div>
+        <div class="div2">
+            <div class="subdiv1"></div>
+            <div class="subdiv2">
+                <h1 id = "judul1">O A N T R I</h1>
+                <p id ="p1">Nikmati kemudahan beraktivitas tanpa terlalu lama <br/> menunggu.</p>
+                <div id = "search">
+                    <input type="text" class="input" placeholder="Cari Outlet">
+                    <a href="outlet.html">
+                        <button class="btn"><i class="fas fa-search fa-lg"></i></button>
+                    </a>
+                </div>
+            </div>
+            <div class="subdiv3"></div>
+           
+        </div>
+        <div class="div3"></div>
+    </div>
+
+    <div id="page2">
+        <div class="div4">
+        </div>
+        <div class="div5">
+            <div class="batas">
+                <div class="subdiv4">
+                    <h1 class="judul2">Puluhan Outlet Mitra</h1>
+                    <p id = "p2">Salon, restoran, petshop dan masih banyak lagi outlet
+                    <br/> yang berkerja sama dengan Oantri.
+                    </p>
+                    <p class="p3">
+                        Temukan outlet yang sesuai dengan kebutuhan anda <br/> 
+                        dengan mudah dan cepat.
+                    </p>
+                </div>
+                <div class="subdiv5">
+                    <a href="outlet.html" class="hashtag">
+                        Lihat Outlet terfavorit di sini.
+                    </a>
+                </div>
+                
+                
+    
+            </div>
+            
+            <div class="batas2">
+                
+                <div class="baris1">
+                    <div class="gallery">
+                        <a href="outlet.html">
+                            <img class="image" src="../img/outlet-1.png" alt="Kecantikan" >
+                            <div class="desc">Kecantikan</div>
+                        </a>
+                        
+                    </div>
+                    <div class="gallery">
+                        <a href="outlet.html">
+                            <img class="image" src="../img/outlet-2.png" alt="Kecantikan" >
+                            <div class="desc">Restoran</div>
+                            
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="baris2">
+                    <div class="gallery" id="kes">
+                        <a href="outlet.html">
+                            <button class="button">Cek Outlet</button>
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a href="outlet.html">
+                            <img class="image" src="../img/outlet-3.png" alt="Kecantikan" >
+                            <div class="desc">Kesehatan</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   
+    <div id="page3">
+        <div class="div6"></div>
+        <div class="div7">
+            <div class="subdiv6"></div>
+            <div class="subdiv7">
+                <h1 id="judul3">Tertarik Bermitra Dengan Kami?</h1>
+                <p class="p4">Hubungi call center Oantri dan penuhi syarat-syarat
+                <br/>yang dibutuhkan. 
+                </p>
+                <button id="cc">Hubungi Oantri</button>
+                <p style="font-size: 1.5vw;">#MudahDenganOantri</p>
+            </div>
+            <div class="subdiv8"></div>
+        </div>
+
+        <div class="div8">
+        </div>
+        
+    </div>
+</body>
+</html>

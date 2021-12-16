@@ -61,7 +61,7 @@
                             </p>
                         </div>
 
-                        <button href="../index.html">
+                        <button id="register">
                             Kembali ke Homepage
                         </button>
                     </form>
@@ -84,6 +84,17 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            if(!window.sessionStorage.getItem("loggedIn")) {
+                window.sessionStorage.setItem("loggedIn", "true");
+            }
+
+            const registerButton = document.getElementById("register");
+            registerButton.onclick = function(e) {
+                e.preventDefault();
+                window.sessionStorage.setItem("loggedIn", "true");
+                window.location.href = "../index.html";              
+            }; 
         </script>
     </body>
 </html>

@@ -40,11 +40,22 @@
                         </ul>
                     </h2>
                 </div>
-                <div class="body-profil2">
+                <div class="body-profil2"> 
+                    <div class="bodown" onclick="dropShow()">
+                        <h2>Edit Profil <img src="../img/dropdown.png" ></h2> 
+                    </div>
                     <div class="body-pro">
-                        <h2>Edit Profil <img src="../img/dropdown.png" onclick="dropShow"></h2>
                         <h2>
-                            <ul id="down">
+                            <ul id="sub">
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
+                    <div class="body-fil">
+                        <h2>
+                            <ul id="sub1">
                                 <li><a href="Pengaturan.html" class="pointer">Edit Profil</a></li>
                                 <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
                                 <li><a href="notif.html" class="hide">Notifikasi</a></li>
@@ -81,14 +92,16 @@
                 if(menuList.style.maxHeight == "0px") {
                         menuList.style.maxHeight = "1300px";}
                 else { menuList.style.maxHeight = "0px"; }
+            } 
+            function dropShow() {
+            var sublist = document.getElementById("sub").style.display;
+            if(sublist == "none"){
+                document.getElementById("sub").style.display = "block";
+            }else{
+                document.getElementById("sub").style.display = "none";
             }
-            // var down = document.getElementById("down");
-            // down.style.maxHeight = "0px";
-            // function dropShow(){
-            //     if(down.style.maxHeight == "0px"){
-            //         down.style.maxHeight = "1300px";}
-            //     else{down.style.maxHeight = "0px";}
-            // }
+            console.log(document.getElementById("sub"));
+            }
         </script>
 </body>
 </html>

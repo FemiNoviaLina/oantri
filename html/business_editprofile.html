@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="stylesheet" href="../css/business_settings.css" />
+        <link rel="stylesheet" href="../css/temporary.css" />
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"
+                ><img src="../img/logo.png" class="logo"
+            /></a>
+            <p class="partner">Business Partner Oantri</p>
+            <nav>
+                <ul id="menuList">
+                    <!-- Kalo pas di pagenya, tambah class="active"-->
+                    <li><a href="profile_b.html">Profil</a></li>
+                    <li><a href="antrianb.html">Antrian</a></li>
+                    <li>
+                        <a href="settingb.html" class="active">Pengaturan</a>
+                    </li>
+                    <li><a href="bantuanb.html">Bantuan</a></li>
+                    <li>
+                        <a href="../index.html" class="outline-li">Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Nah ini icon buat "cari" -->
+            <img
+                src="../img/menu.png"
+                class="menu_icon"
+                onclick="togglemenu()"
+            />
+            <!-- Icon menu ini buat tampilan responsive-nya -->
+        </header>
+
+        <div class="body_container">
+            <div class="photo-desc">
+                <table class="tabell general-info">
+                    <tr>
+                        <td><h2>Informasi Umum</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Nama outlet</h3>
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="nama"
+                                value="Gloskin Clinic"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Kategori outlet</h3>
+                        </td>
+                        <td>
+                            <select name="status" id="status">
+                                <option value="">Kecantikan</option>
+                                <option value="1">Kesehatan</option>
+                                <option value="2">Salon</option>
+                                <option value="3">Butik</option>
+                                <option value="4">Binatu</option>
+                                <option value="5">Studio</option>
+                                <option value="6">Restoran</option>
+                                <option value="7">Otomotif</option>
+                                <option value="8">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Kota lokasi outlet</h3>
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="kategori"
+                                value="Tugu, Malang"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Alamat outlet</h3>
+                        </td>
+                        <td>
+                            <input
+                                type="text"
+                                name="kategori"
+                                value="Hotel Tugu Malang Jalan Tugu No. 3, Jl. Kahuripan No.3,
+                                Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65119"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3>Detail Lokasi</h3></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3>
+                                *Untuk memudahkan user menemukan lokasi melalui
+                                Google Maps
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img src="../img/map.png" style="width: 40%" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Waktu operasional outlet</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Dari</h3>
+                            <input
+                                type="time"
+                                name="appt"
+                                value="09:00"
+                                required
+                            />
+                        </td>
+                        <td>
+                            <h3>Hingga</h3>
+                            <input
+                                type="time"
+                                name="appt"
+                                value="21:00"
+                                required
+                            />
+                        </td>
+                    </tr>
+                </table>
+                <table class="tabell description">
+                    <tr>
+                        <td>
+                            <h2>Deskripsi Outlet</h2>
+                        </td>
+                    </tr>
+                    <tr style="width: 100%">
+                        <td>
+                            <textarea
+                                name="comment"
+                                value=" “Art, Beauty & Perfection”. Gloskin Clinic berfokus pada
+                        pelayanan klinik kecantikan kualitas tinggi (Finest
+                        Aesthetic), GLOSKIN memberikan perawatan unggulan kelas
+                        dunia terbaik, terdepan, dan terpercaya di Indonesia.
+                        Klinik kami memberi hasil yang nyata, didukung oleh
+                        produk berkualitas dan peralatan canggih yang terus
+                        mengikuti perkembangan teknologi. Kami jamin Anda akan
+                        merasa sangat nyaman dan dimanjakan saat proses
+                        revitalisasi dan peremajaan berlangsung. Datang dan
+                        bergabunglah bersama kami!"
+                            >
+                            </textarea>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tabell-photo">
+                    <tr>
+                        <td>
+                            <h2>Foto Outlet</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img
+                                src="../img/gloskin-clinic-photo.png"
+                                alt="Gloskin Clinic"
+                                style="width: 100%"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" class="button" id="myBtn"
+                                >Lihat Foto Outlet</a
+                            >
+                            <a href="" class="button">Ganti foto Outlet</a>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tabell-logo">
+                    <tr>
+                        <td>
+                            <h2>Logo Outlet</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img
+                                src="../img/gloskin-clinic-logo.png"
+                                alt="Gloskin Clinic"
+                                style="width: 100%"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="" class="button" id="myBtn"
+                                >Lihat Foto Outlet</a
+                            >
+                            <a href="" class="button">Ganti foto Outlet</a>
+                        </td>
+                    </tr>
+                </table>
+                <a
+                    href="bussiness_profile.html"
+                    class="button"
+                    style="margin: 50px; width: 30%"
+                    >Simpan</a
+                >
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="close">&times;</div>
+                <div>
+                    <img
+                        src="../img/gloskin-clinic-photo.jpeg"
+                        alt="Gloskin Clinic"
+                        style="width: 80%"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="../js/modal.js"></script>
+    </body>
+</html>

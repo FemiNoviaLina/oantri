@@ -1,5 +1,3 @@
-<!-- BUSINESS PARTNER'S BANTUAN -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,16 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Oantri Business Partner</title>
         <link rel="shortcut icon" href="../img/logo.ico" />
-        <link rel="stylesheet" href="../css/antrian2b.css" />
+        <link rel="stylesheet" href="../css/business_queue_all.css" />
         <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
         kalau header versi 1 tidak perlu ini sih -->
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
             rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
     </head>
 
@@ -26,17 +20,24 @@
         <div class="container">
             <!-- HEADER VERSI 3: Buat business partner -->
             <header>
-                <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+                <a href="../index.html"
+                    ><img src="../img/logo.png" class="logo"
+                /></a>
                 <p class="partner">Business Partner Oantri</p>
                 <nav>
                     <ul id="menuList">
                         <!-- Kalo pas di pagenya, tambah class="active"-->
-                        <li><a href="profile_b.html">Profil</a></li>
-                        <li><a href="antrianb.html" class="active">Antrian</a></li>
-                        <li><a href="settingb.html">Pengaturan</a></li>
-                        <li><a href="bantuanb.html">Bantuan</a></li>
-                        <li><a href="../index.html" class="outline-li">Keluar</a></li>
-                    </ul>
+                        <li><a href="bussiness_profile.html">Profil</a></li>
+                        <li><a href="business_queue.html" class="active">Antrian</a></li>
+                        <li><a href="business_settings.html">Pengaturan</a></li>
+                        <li>
+                            <a href="business_help.html">Bantuan</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
                 </nav>
                 <!-- Nah ini icon buat "cari" -->
                 <img
@@ -47,16 +48,26 @@
                 <!-- Icon menu ini buat tampilan responsive-nya -->
             </header>
 
+            <div class="warning">
+                Hi, Admin Oantri!
+                <br>
+                Silahkan mengakses halaman ini 
+                <br>
+                melalui perangkat komputer Anda.
+                <br>
+                Terima kasih ^^
+            </div>
+
             <div class="body_container">
                 <!-- Nah di sini buat isi page-nya, selamat bekerja
             SEMANGATT -->
 
                 <table class="tabell">
                     <tr>
-                        <td style="width: 20%">
-                            <h1>Face Therapy</h1>
+                        <td style="padding: 30px;">
+                            <h1>Skin Rejuvenation</h1>
                         </td>
-                        <td>
+                        <td style="padding: 20px;">
                             <input
                                 type="date"
                                 name="begin"
@@ -64,9 +75,10 @@
                                 value="2021-12-18"
                                 min="2021-12-17"
                                 max="2022-12-17"
+                                style="padding: 20px;"
                             />
                         </td>
-                        <td><h3>5 Antrian Tersisa</h3></td>
+                        <td><h2>4 Antrian Tersisa</h2></td>
                         <td>
                             <button>Tutup Antrian Hari Ini</button>
                             <br />
@@ -155,22 +167,51 @@
                                     </select>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>FT-6</td>
+                                <td>Gracia Shannon</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-7</td>
+                                <td>Hyce Siegren</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
 
                     <table class="info">
                         <tr>
-                            <td><h3>Sedang dilayani:</h3></td>
+                            <td><h3 class="sub-info">Sedang dilayani:</h3></td>
                         </tr>
                         <tr>
                             <td class="now-queue">
-                                <h2>FT-3</h2>
-                                <h3>Shania Nabilah</h3>
+                                <h1>FT-3</h1>
+                                <h2>Shania Nabilah</h2>
                             </td>
                             <td class="countdown">
-                                <input type="number" value="59" />
+                                <h3>Waktu tersisa</h3>
+                                <input type="number" value="59" style="text-align: center;"/>
                                 <h1>:</h1>
-                                <input type="number" value="30" />
+                                <input type="number" value="30" style="text-align: center;" />
                             </td>
                         </tr>
                         <tr>
@@ -182,11 +223,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><h3>Estimasi waktu pelayanan:</h3></td>
+                            <td><h3 class="sub-info">Estimasi waktu pelayanan:</h3></td>
                         </tr>
                         <tr>
                             <td class="countdown">
-                                <input type="number" value="60" />
+                                <input type="number" value="60" style="text-align: center;"/>
                                 <h2>menit</h2>
                             </td>
                         </tr>
@@ -195,6 +236,7 @@
                         </tr>
                     </table>
                 </div>
+                
             </div>
             <!-- End body_container -->
         </div>

@@ -16,12 +16,14 @@ h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
+    color: #fd7558;
 }
 
 h2 {
     font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
+    color: #fd7558;
 }
 
 h3 {
@@ -45,7 +47,7 @@ header {
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: #ffecaa;
+    background-color: #fff;
     padding-bottom: 13px;
 }
 
@@ -90,7 +92,7 @@ nav ul li a:hover {
 
 .outline-li {
     padding: 10px 20px;
-    background-color: #ffecaa;
+    background-color: #fff;
     border-color: #fd7558;
     border: solid;
     color: #fd7558;
@@ -101,7 +103,7 @@ nav ul li a:hover {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -119,6 +121,29 @@ nav ul li a:hover {
     width: 27px;
     cursor: pointer;
     display: none;
+}
+
+.warning {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .warning {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        font-family: "Noto Sans";
+        font-weight: 700;
+        font-size: 40px;
+        color: #fd7558;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .body_container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -149,7 +174,7 @@ nav ul li a:hover {
     nav ul li a:hover,
     .outline-li:hover {
         background-color: #fd7558;
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 
@@ -190,99 +215,63 @@ button:hover {
     width: 100%;
 }
 
-.box_image {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 480px;
-    height: 360px;
-    right: -5%;
-    top: 43%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.titles {
+    margin: 30px;
 }
 
-.box_image img {
-    width: 100%;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    backface-visibility: hidden;
-}
-
-.front {
-    transform: perspective(1000px) rotateY(0deg);
-    z-index: 2;
-}
-
-.back {
-    transform: perspective(1000px) rotateY(180deg);
-    z-index: 1;
-}
-
-.box_image:hover .front {
-    transform: perspective(1000px) rotateY(-180deg);
-    z-index: 2;
-}
-.box_image:hover .back {
-    transform: perspective(1000px) rotateY(0deg);
-    z-index: 1;
-}
-
-.tabell {
-    margin: 20px 0 70px 80px;
-    width: 60%;
-}
-
-.tabell td {
-    padding: 10px;
-}
-
-.tabell img {
-    width: 30px;
+table img {
+    width: 60px;
     margin-right: 20px;
 }
 
-.outlet-description,
-.outlet-location {
-    width: 45%;
-    margin: 20px 0 40px 80px;
+.service_list {
+    margin: 70px 0 70px 120px;
 }
 
-/* 
-.outlet-location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info img {
-    height: 30px;
+.service_list li {
+    list-style: none;
     display: inline-block;
 }
 
-.info .outlet-location h3 {
-    display: inline-block;
-    padding-left: 10px;
+.service_list li a {
+    text-decoration: none;
+    background-color: #ffecaa;
+    color: #fd7558;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700px;
+    font-size: 26px;
+    padding: 50px 30px;
+    margin-right: 40px;
 }
 
-.info .outlet-location {
-    display: block;
+.service_list li a:hover {
+    font-weight: 800;
+    background-color: #fd7558;
+    color: #ffecaa;
 }
 
-.outlet-description,
-.outlet-detail {
-    width: 800px;
-    float: none;
-    text-align: justify;
-    left: 8%;
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 30px;
-} */
+.tabell {
+    margin: -20px 0 70px 120px;
+}
+
+table input[type="text"] {
+    border: 3px solid #fd7558;
+    border-radius: 1px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 38vw;
+    margin-bottom: 10px;
+}
+
+table input[type="number"] {
+    width: 6vw;
+    border: 3px solid #fd7558;
+    border-radius: 1px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}

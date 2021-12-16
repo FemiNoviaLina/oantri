@@ -31,61 +31,75 @@
             <!-- Icon menu ini buat tampilan responsive-nya -->
         </header>
         <div class = 'maindown'>
-            <div class="body-profil2">
+            <div class="header-2">
+                <img src="../img/left-arrow.png" class="icon_header2">
                 <h2>
                     <ul>
-                        <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
-                        <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
-                        <li><a href="notif.html" class="pointer">Notifikasi</a></li>
-                        <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
-                    </ul> 
+                        <li><a href="profile.html">Pengaturan Akun</a></li>
+                    </ul>
                 </h2>
             </div>
             <div class="body-profil">
-                <div class="header-2">
-                    <img src="../img/left-arrow.png" class="icon_header2">
-                    <h2>
-                        <ul>
-                            <li><a href="profile.html">Pengaturan Akun</a></li>
-                        </ul>
-                    </h2>
+                <div class="body-profil2">
+                    <div class="bodown" onclick="dropShow()">
+                        <h2>Notifikasi<img src="../img/dropdown.png" ></h2> 
+                    </div>
+                    <div class="body-pro">
+                        <h2>
+                            <ul id="sub">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
+                    <div class="body-fil">
+                        <h2>
+                            <ul id="sub1">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="notif.html" class="pointer">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
                 </div>
-                <div class="edit">
+                <div class="tabel">
                     <h1>Notifikasi</h1>
+                    <table class="tab-notif">
+                        <thead>
+                            <tr>
+                                <th>Izinkan akses notifikasi untuk : </th>
+                                <th>Whatsapp</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p>antrian. Notifikasi akan dikirimkan 
+                                    5 menit sebelum antrian Anda.</p> </td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><p>antrian misalnya ketika terjadi
+                                    delay dan waktu antrian Anda diundur</p></td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Konfirmasi pendaftaran antrian.</p></td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td><p>promosi</p></td>
+                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                        </tbody>   
+                    </table>
                 </div>
-                <table class="tab-notif">
-                    <thead>
-                        <tr>
-                            <th>Izinkan akses notifikasi untuk : </th>
-                            <th>Whatsapp</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><p>antrian. Notifikasi akan dikirimkan 
-                                5 menit sebelum antrian Anda.</p> </td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td><p>antrian misalnya ketika terjadi
-                                delay dan waktu antrian Anda diundur</p></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td><p>Konfirmasi pendaftaran antrian.</p></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                        <tr>
-                            <td><p>promosi</p></td>
-                            <td><input type="checkbox"></td>
-                            <td><input type="checkbox"></td>
-                        </tr>
-                    </tbody>   
-                </table>
                 <div class="notif-button">
                     <button>Simpan Setelan</button>
                 </div>
@@ -99,6 +113,15 @@
                 if(menuList.style.maxHeight == "0px") {
                         menuList.style.maxHeight = "1300px";}
                 else { menuList.style.maxHeight = "0px"; }
+            }
+            function dropShow() {
+            var sublist = document.getElementById("sub").style.display;
+            if(sublist == "none"){
+                document.getElementById("sub").style.display = "block";
+            }else{
+                document.getElementById("sub").style.display = "none";
+            }
+            console.log(document.getElementById("sub"));
             }  
         </script>
 </body>

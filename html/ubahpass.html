@@ -31,16 +31,6 @@
             <!-- Icon menu ini buat tampilan responsive-nya -->
         </header>
         <div class = 'maindown'>
-            <div class="body-profil2">
-                <h2>
-                    <ul>
-                        <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
-                        <li><a href="ubahpass.html" class="pointer">Ubah Password</a></li>
-                        <li><a href="notif.html" class="hide">Notifikasi</a></li>
-                        <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
-                    </ul> 
-                </h2>
-            </div>
             <div class="body-profil">
                 <div class="header-2">
                     <img src="../img/left-arrow.png" class="icon_header2">
@@ -50,10 +40,32 @@
                         </ul>
                     </h2>
                 </div>
-                <div class="edit">
-                    <h1>Ubah Password</h1>
+                <div class="body-profil2">
+                    <div class="bodown" onclick="dropShow()">
+                        <h2>Ubah Password<img src="../img/dropdown.png" ></h2> 
+                    </div>
+                    <div class="body-pro">
+                        <h2>
+                            <ul id="sub">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
+                    <div class="body-fil">
+                        <h2>
+                            <ul id="sub1">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="pointer">Ubah Password</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
                 </div>
                 <div class="body-edit">
+                    <h1>Ubah Password</h1>
                     <div class="input-box">
                         <span class="details">Password Anda saat ini</span>
                         <input type="password" value="********">
@@ -80,6 +92,15 @@
                 if(menuList.style.maxHeight == "0px") {
                         menuList.style.maxHeight = "1300px";}
                 else { menuList.style.maxHeight = "0px"; }
+            }
+            function dropShow() {
+            var sublist = document.getElementById("sub").style.display;
+            if(sublist == "none"){
+                document.getElementById("sub").style.display = "block";
+            }else{
+                document.getElementById("sub").style.display = "none";
+            }
+            console.log(document.getElementById("sub"));
             }  
         </script>
 </body>

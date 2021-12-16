@@ -183,7 +183,7 @@ nav ul li a:hover {
     width: 50%;
     padding: 25px;
     float: left;
-    height: 24vw;
+    height: 300px;
     box-sizing: border-box;
     background-image: url(../img/atas.png);
     background-size: cover;
@@ -195,9 +195,8 @@ nav ul li a:hover {
     width: 50%;
     padding: 25px;
     float: right;
-    height: 24vw;
+    height: 300px;
     box-sizing: border-box;
-    /* border: 1px solid cadetblue; */
     background-image: url(../img/bawah.png);
     background-size: cover;
     text-align: center;
@@ -243,12 +242,13 @@ nav ul li a:hover {
     box-sizing: border-box;
     border-radius: 22px 22px 0 0 ;
     text-align: center;
+
 }
 
 .subdiv2{
     width: 100%;
     height: 25%;
-    padding-top: 1.5vw;
+    padding-top: 15px;
     padding-left: 1.5vw;
     box-sizing: border-box;
     background-color: #FD7558 ;
@@ -271,6 +271,7 @@ nav ul li a:hover {
 }
 
 .cardlink{
+    text-align: left;
     width: fit-content;
     font-size: 20px;
     cursor: pointer;
@@ -306,7 +307,7 @@ nav ul li a:hover {
 
 
 /*Biar responsive*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px){
     .page1{
         width: 100%;
         height: 86vw;
@@ -316,7 +317,7 @@ nav ul li a:hover {
     .div1{
         width: 100%;
         padding-bottom: 25px;
-        height: 43vw;
+        height: 250px;
         box-sizing: border-box;
         /* border: 1px solid yellowgreen; */
     }
@@ -324,7 +325,7 @@ nav ul li a:hover {
     .div2{
         width: 100%;
         padding-bottom: 25px;
-        height: 43vw;
+        height: 250px;
         box-sizing: border-box;
         /* border: 1px solid cadetblue; */
     }
@@ -333,7 +334,7 @@ nav ul li a:hover {
         grid-row: 4/5;
         align-self: center;
         font-size: 15px;
-        padding-top: 5px;
+        /* padding-top: 5px; */
     }
 
     .subdiv2:hover .overlay{
@@ -341,8 +342,12 @@ nav ul li a:hover {
         height: 10%;
     }
 
-    .teks{
-        margin-top: 30px;
-        font-size: 15px;
-    }
+   .subdiv2{
+       padding-top: 12px;
+   }
+
+   .teks{
+       margin-top: 20px;
+       font-size: 15px;
+   }
 }

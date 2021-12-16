@@ -65,7 +65,7 @@
                             <input type="password" class="login" />
                         </div>
 
-                        <button href="../html/success.html">Buat Akun</button>
+                        <button id="register">Buat Akun</button>
                     </form>
                 </div>
                 <img src="../img/bawah.png" class="bawah" />
@@ -86,6 +86,21 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            if(!window.sessionStorage.getItem("loggedIn")) {
+                window.sessionStorage.setItem("loggedIn", "false");
+            }
+
+            if(window.sessionStorage.getItem("loggedIn") == "true") {
+                window.location.href = "../index.html";
+            }
+
+            const registerButton = document.getElementById("register");
+            registerButton.onclick = function(e) {
+                e.preventDefault();
+                window.sessionStorage.setItem("loggedIn", "true");
+                window.location.href = "success.html";              
+            }; 
         </script>
     </body>
 </html>

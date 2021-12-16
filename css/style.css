@@ -188,6 +188,10 @@ button:hover {
         width: 300px;
         padding: 50px 10px 20px 10px;
     }
+
+    .banner-outlet h2 {
+        font-size: 20px;
+    }
 }
 
 .banner-outlet form {
@@ -284,15 +288,18 @@ button:hover {
     margin: 0 10px;
 }
 
+.outlet-cards {
+    min-width: 250px;
+}
+
 .outlet-cards #outlet-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-shrink: 3;
-    min-width: 250px;
 }
 
-.card{
+.card {
     margin: 10px 10px 30px 10px;
 }
 
@@ -351,7 +358,7 @@ button:hover {
 .outlet-info {
     padding: 20px 40px;
     width: 60%;
-    min-width: 300px;
+    min-width: 360px;
     float: left;
     text-align: justify;
     text-justify: inter-word;
@@ -370,7 +377,7 @@ button:hover {
 }
 
 .outlet-info .outlet-pic img {
-    width: 700px;
+    width: 100%;
 }
 
 .outlet-location {
@@ -382,6 +389,11 @@ button:hover {
 .outlet-info .outlet-location img {
     height: 20px;
     display: inline-block;
+}
+
+.outlet-location .map img{
+    width: 100%;
+    height: auto;
 }
 
 .outlet-info .outlet-location h3 {
@@ -397,10 +409,6 @@ button:hover {
     .outlet-info {
         width: 100%;
         background-size: cover;
-    }
-
-    .outlet-info .outlet-pic img {
-        width: 300px;
     }
 }
 
@@ -454,6 +462,7 @@ button:hover {
     padding: 20px 20px;
     margin: 30px auto;
     width: 40%;
+    min-width: 300px;
     background-color: #FFECAA;
     border: #FD7558 3px solid;
 }

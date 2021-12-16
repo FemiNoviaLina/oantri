@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="stylesheet" href="../css/settingb.css" />
+        <link rel="stylesheet" href="../css/temporary.css" />
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.png" class="logo" />
+            <p class="partner">Business Partner Oantri</p>
+            <nav>
+                <ul id="menuList">
+                    <!-- Kalo pas di pagenya, tambah class="active"-->
+                    <li><a href="profile_b.html">Profil</a></li>
+                    <li><a href="antrianb.html">Antrian</a></li>
+                    <li><a href="settingb.html" class="active">Pengaturan</a></li>
+                    <li><a href="bantuanb.html">Bantuan</a></li>
+                    <li><a href="index.html" class="outline-li">Keluar</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Nah ini icon buat "cari" -->
+            <img
+                src="../img/menu.png"
+                class="menu_icon"
+                onclick="togglemenu()"
+            />
+            <!-- Icon menu ini buat tampilan responsive-nya -->
+        </header>
+
+        <div class="body_container">
+            <div class="photo-desc">
+                <table class="tabell general-info">
+                    <tr>
+                        <td><h2>Informasi Umum</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Nama outlet</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Kategori outlet</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="kategori">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Kota lokasi outlet</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="kategori">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Alamat outlet</h3>
+                        </td>
+                        <td>
+                            <input type="text" name="kategori">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h3>Detail Lokasi</h3></td>
+                    </tr>
+                    <tr><td colspan="2"><h3>*Untuk memudahkan user menemukan lokasi melalui Google Maps</h3></td></tr>
+                    <tr>
+                        <td colspan="2">
+                            <img src="../img/map.png" style="width: 90%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Waktu operasional outlet</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Dari</h3>
+                            <input type="time" name="appt" value="09:00" required>
+                        </td>
+                        <td>
+                            <h3>Hingga</h3>
+                            <input type="time" name="appt" value="21:00" required>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tabell photo">
+                    <tr>
+                        <td>
+                            <h2>Foto Outlet</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../img/gloskin-clinic-photo.png" alt="Gloskin Clinic" style="width: 100%;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="myBtn">Lihat Foto Outlet</button>
+                            <button>Ganti foto Outlet</button>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tabell description">
+                    <tr>
+                        <td>
+                            <h2>Deskripsi Outlet</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Deskripsi</h3>
+                        </td>
+                    </tr>
+                    <tr style="width: 100%; background-color: aqua;">
+                        <td>
+                            <textarea name="comment" value=""></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button style="margin: 50px; width: 30%;">Simpan</button>
+            </div>
+            </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="close">&times;</div>
+                <div>
+                    <img src="../img/gloskin-clinic-photo.jpeg" alt="Gloskin Clinic" style="width: 80%;">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="../js/modal.js"></script>
+    </body>
+</html>

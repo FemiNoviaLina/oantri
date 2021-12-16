@@ -19,7 +19,7 @@ const createOutletCard = (element) => {
     outlet_card.appendChild(outlet_card_name);
 
     outlet_card.onclick = () => {
-        window.sessionStorage.setItem("outlet", element.name);
+        window.sessionStorage.setItem("outlet", JSON.stringify(element));
         window.location.href = "outlet_detail.html";
     }
 

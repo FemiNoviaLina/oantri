@@ -11,7 +11,7 @@ export const outlets = [
         name: "Restoran Melati",
         address: "Tugu, Malang",
         location: "Jl. Raya Melati No.1, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Restoran keluarga",
+        description: "Restoran keluargaSatu-satunya restoran di Malang yang menampilkan suasana Tempo Doeloe Malang klasik dan romantis. Terletak di Tugu Hotel Malang, Melati Restaurant terkenal dengan resep lama masakan rumahan asli Indonesia, menu Peranakan Cina, serta menu besar steak yang empuk. Mulai dari resep kolonial Belanda kuno yaitu steak goreng hingga steak panggang bergaya Perancis. Dengan menu roti sarapan lengkap yang semuanya dipanggang segar dari oven setiap hari, restoran ini juga merupakan sarapan favorit dan tempat brunch, satu-satunya dari jenisnya dengan suasana Jawa yang tenang dan tropis. Melati Restaurant buka 24 jam sepanjang hari.",
         logo: "../img/restoran-melati-logo.png",
         pic: "../img/restoran-melati-photo.jpg"
     }, 
@@ -21,13 +21,13 @@ export const outlets = [
         location: "Jl. Raya Melati No.12, Kec. Klojen, Kota Malang, Jawa Timur 65119",
         description: "Klinik kecantikan",
         logo: "../img/gloskin-clinic-logo.png",
-        pic: "../img/gloskin-clinic-photo.jpeg"
+        pic: "../img/gloskin-clinic-photo.png"
     },
     {
         name: "House of Pet",
         address: "Tugu, Malang",
         location: "Jl. Raya Melati No.13, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Tempat peliharaan",
+        description: "House of Pet adalah sebuah petshop yang menawarkan berbagai macam merk pet food, khususnya untuk anjing dan kucing.",
         logo: "../img/house-of-pet-logo.png",
         pic: "../img/house-of-pet-photo.jpg"
     }, 
@@ -35,28 +35,32 @@ export const outlets = [
         name: "Djati Lounge",
         address: "Tugu, Malang",
         location: "Jl. Raya Melati No.14, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Tempat makan",
-        logo: "../img/djati-lounge-logo.png"
+        description: "Started with a vision to create an \"Escaping place\" from everyday routines, Djati Lounge was established and becomes a unique place offering Indonesia’s particular exotic ambience. A harmony blend between Indonesia’s captivating natural heritage and modern lifestyle, alongside its luxurious modern design, Djati Lounge will pampered you and your love ones to extraordinary experiences. Djati Lounge provides different kind of culinary teasers, a variety of yours truly and faithfully tongue-fondling western foods and drinks.",
+        logo: "../img/djati-lounge-logo.png",
+        pic: "../img/djati-lounge-photo.jpg"
     }, 
     {
         name: "Smiley Garage",
         address: "Tugu, Malang",
         location: "Jl. Raya Melati No.15, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Tempat perawatan kendaraan",
-        logo: "../img/smiley-garage-logo.png"
+        description: "Cuci Mobil & Motor Jl.Danau Maninjau Raya 165 Sawojajar-Malang",
+        logo: "../img/smiley-garage-logo.png",
+        pic: "../img/smiley-garage-photo.png"
     },
     {
         name: "Tiara Salon",
         address: "Tugu, Malang",
         location: "Jl. Raya Melati No.16, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Tempat perawatan kulit",
-        logo: "../img/tiara-salon-logo.png"
+        description: "Does your hair look dull? It's time to refresh your appearance and restore the shine of your hair at Tiara Salon. Trust your hair care in the hands of professional stylists, and in no time you'll be leaving the salon looking dazzling!",
+        logo: "../img/tiara-salon-logo.png",
+        pic: "../img/tiara-salon-photo.jpg"
     }, 
     {
         name: "RSUB",
         address: "Tugu, Malang",
         location: "Universitas Brawijaya, Jl. Raya Melati No.17, Kec. Klojen, Kota Malang, Jawa Timur 65119",
-        description: "Rumah Sakit Universitas Brawijaya",
-        logo: "../img/rsub-logo.png"
+        description: "Rumah Sakit Universitas Brawijaya (RSUB) telah memperoleh penilaian dalam Standar Mutu Rumah Sakit versi 2012 secara Paripurna dari KARS. Saat ini RSUB telah melayani pasien peserta BPJS dan SPM (keluarga pra-sejahtera) khusus Kota Malang.",
+        logo: "../img/rsub-logo.png",
+        pic: "../img/rsub-photo.jpg"
     }
 ]

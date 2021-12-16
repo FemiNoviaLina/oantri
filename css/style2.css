@@ -283,10 +283,6 @@ button:hover {
 }
 
 .tab {
-    /* position: absolute; */
-   
-    /* bottom: 25%;
-    left: 52.5%; */
     margin: 10px 670px;
     height: 70px;
     border-collapse: collapse;
@@ -312,7 +308,13 @@ button:hover {
 
 .tab tbody p{
     background-color: #FFECAA;
-    padding-left: 10px;
+    padding-left: 15px;
+}
+
+.tab img{
+    position: relative;
+    top: 5px;
+    width: 13px;
 }
 
 .Rbutton {

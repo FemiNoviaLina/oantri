@@ -1,0 +1,137 @@
+<!-- BUSINESS PARTNER'S BANTUAN -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <link rel="stylesheet" href="../css/antrianb.css" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+
+    <body>
+        <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+        <div class="container">
+            <!-- HEADER VERSI 3: Buat business partner -->
+            <header>
+                <img src="../img/logo.png" class="logo" />
+                <p class="partner">Business Partner Oantri</p>
+                <nav>
+                    <ul id="menuList">
+                        <!-- Kalo pas di pagenya, tambah class="active"-->
+                        <li><a href="../profile_b.html">Profil</a></li>
+                        <li>
+                            <a href="../antrianb.html" class="active"
+                                >Antrian</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../settingb.html">Pengaturan</a>
+                        </li>
+                        <li><a href="../bantuanb.html">Bantuan</a></li>
+                        <li>
+                            <a href="../homepage.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nah ini icon buat "cari" -->
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+                <!-- Icon menu ini buat tampilan responsive-nya -->
+            </header>
+
+            <div class="body_container">
+                <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+                <table class="titles">
+                    <tr>
+                        <td><img src="../img/service.png" /></td>
+                        <td><h2>Pilih Layanan</h2></td>
+                    </tr>
+                </table>
+
+                <ul class="service_list">
+                    <li>
+                        <a href="../html/antrian2b">Face Therapy</a>
+                    </li>
+                    <li>
+                        <a href="../html/antrian2b">Vitamin Infusion</a>
+                    </li>
+                    <li>
+                        <a href="../html/antrian2b">Skin Rejuvenation</a>
+                    </li>
+                </ul>
+
+                <table class="titles">
+                    <tr>
+                        <td><img src="../img/addservice.png" /></td>
+                        <td><h2>Buat Layanan Baru</h2></td>
+                    </tr>
+                </table>
+
+                <table class="tabell">
+                    <!-- BARIS PERTAMA -->
+                    <tr>
+                        <td style="width: 20%">
+                            <h3>Nama Layanan</h3>
+                        </td>
+                        <td style="width: 50%">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <!-- BARIS KEDUA -->
+                    <tr>
+                        <td style="width: 20%">
+                            <h3>Estimasi waktu antrian</h3>
+                        </td>
+                        <td style="width: 50%">
+                            <h3><input type="number" value="60" /> menit</h3>
+                        </td>
+                    </tr>
+
+                    <!-- BARIS KETIGA -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button>Buat</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- End body_container -->
+        </div>
+        <!-- End container -->
+
+        <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

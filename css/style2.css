@@ -3,19 +3,137 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow: center;
+}
+
+/* Ini buat nunjukin dia lagi di page mana */
+.active {
+    border-bottom: solid;
+    position: relative;
+    border-bottom-width: 6px;
+    border-bottom-color: #FD7558;
+    font-weight: 800;
+    color: #FD7558;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #FFECAA;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    width: 160px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #FD7558;
+    padding-bottom: 9px;
+}
+
+nav ul li a:hover {
+    font-weight: 800;
+    color: #FD7558;
+}
+
+/* KHUSUS HEADER VERSI 2 */
+.cari {
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #FD7558;
+    font-size: 24px;
+    margin: 0 50px;
+    width: 60px;
+}
+
+.cari:hover {
+    border-bottom: none;
+    color: #FD7558;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* YAK SEGITU AJA */
+
+.body_container {
+    background-color: white;
+    /* atur aje bos */
+}
+
+.menu_icon {
+    width: 27px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Untuk button */
 button {
-    padding: 5px 13px;
+    padding: 5px 15px;
     background-color: #FD7558;
     border: solid;
-    font-size: 15pt;
+    font-size: 18pt;
     color: white;
     cursor: pointer;
     transition: .7s;
 }
 
-button :hover {
+button:hover {
     border: solid;
     border-color: #FD7558;
     color: #FD7558;
@@ -23,83 +141,49 @@ button :hover {
 
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+/* Header versi responsive */
+@media only screen and (max-width: 768px) {    
+    nav ul{
+        width: 100%;
+        background-color: #FD7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
 
-h1 {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 40px;
-}
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+    }
 
-h2 {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 32px;
-}
+    nav ul li a {
+        color: #FFF;
+        font-size: 16px;
+    }
 
-h3 {
-    font-size: 26px;
-    font-weight: 400;
-}
+    nav ul li a:hover {
+        background-color: #FFF;
+        color: #FD7558;
+    }
 
-p {
-    font-size: 20px;
-}
+    .menu_icon {
+        display: block;
+    }
 
-ul {
-    list-style-type: none;
-    width: 100%;
-}
-
-header {
-    background: #fff;
-}
-
-header .logo{
-    padding: 5px;
-    display: block;
-    margin: 0 auto;
-}
-
-header .logo img{
-    display: block;
-    margin: 0 auto;
-}
-
-.nav-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.nav-header .nav-list{
-    display: inline-block;
-    width: 140px;
-    text-align: center;
-    padding: 40px auto;
-}
-
-.nav-header .nav-list a {
-    font-size: 16px;
-}
-
-.nav-header .nav-list :hover{
-    font-weight: 900;
-}
-
-.selected-list {
-    font-weight: 900;
-    color: #FD7558;
-    border-bottom: 5px solid #FD7558;
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
 }
 
 .nav-header2 {
     width: 50%;
     display: inline-block;
     background-color: #ffecaa;
+    color: #FD7558;
 }
 
 .nav-header2 li {
@@ -136,6 +220,14 @@ header .logo img{
         width: 100%;
         min-width: 350px;
     }
+
+    .antri h2{
+        width: 100%;
+        position: absolute;
+        right: -3%;
+    }
+
+
 }
 
 .account {
@@ -153,12 +245,12 @@ header .logo img{
     margin-top: 40px;
 }
 
-.account-button :hover {
+/* .account-button :hover {
     border: solid;
     border-color: #FD7558;
     color: #FD7558;
     background-color: white;
-}
+} */
 
 .account-button button {
     min-width: 200px;
@@ -166,12 +258,13 @@ header .logo img{
     max-width: 300px;
 }
 
-.account-button button :hover {
+/* .account-button button :hover {
     border: solid;
     border-color: #FD7558;
     color: #FD7558;
     background-color: white;
-}
+} */
+
 
 
 .account h1, h2 {
@@ -180,26 +273,31 @@ header .logo img{
     padding-bottom: 5px;
 }
 
+.antri h2{
+    margin-left: 670px;
+    border-bottom: none;
+}
+
 .account p {
     padding-top: 10px;
 }
 
 .tab {
-    position: absolute;
-    text-align: left;
-    left: 52.5%;
-    margin-top: 10px;
+    /* position: absolute; */
+   
+    /* bottom: 25%;
+    left: 52.5%; */
+    margin: 10px 670px;
     height: 70px;
     border-collapse: collapse;
     border-spacing: none;
     width: 580px;
-  
-    
 }
 
 .tab thead th, tbody td {
     padding-left: 10px;
     height: 35px;
+    text-align: left;
 }
 
 .tab thead th {
@@ -209,16 +307,22 @@ header .logo img{
 
 .tab tbody td {
     border-bottom: solid;
-    border-width: thin;
     border-color: #FD7558;
+}
+
+.tab tbody p{
+    background-color: #FFECAA;
+    padding-left: 10px;
 }
 
 .Rbutton {
     display: flex;
-    position: relative;
+    position: absolute;
+    bottom: 12%;
+    right: 13%;
     flex-direction: column;
     justify-content: right;
-    margin-top: 280px;
+    margin-top: 20px;
 }
 
 .Rbutton :hover {
@@ -243,6 +347,177 @@ header .logo img{
 }
 
 
+.header-2 {
+    width: 100%;
+    background-color: #ffecaa;
+    padding: 25px;
+    position: relative;
+}
 
+.header-2 li{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.header-2 a{
+    font-weight: bold;
+    color: black;
+}
+
+.header-2 h2{
+    border-bottom: none;
+}
+
+.header-2 img{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.body-profil2{
+    float: left;
+    width: 25%;
+    height: 88vh;
+    background-color: #FD7558;
+}
+
+.body-profil2 li{
+    position: relative;
+    top: 80px;
+    
+}
+
+.body-profil2 h2{
+    border-bottom: none;
+}
+
+
+.body-profil2 a:hover{
+    color: #ffecaa; opacity: 1;
+}
+
+.pointer{
+    position: relative;
+    display: block;
+    transition: all .3s ease-in-out;
+    padding-block: 15px;
+    color: #ffecaa; opacity: 1;
+    font-weight: 800;
+    border-left: solid;
+    border-color: #ffecaa;
+    border-left-width: 10px;
+    
+}
+
+.hide {
+    position: relative;
+    left: 10px;
+    display: block;
+    transition: all .3s ease-in-out;
+    padding-block: 15px;
+    color: #ffecaa; opacity: 0.6;
+}
+
+.pointer, .hide{
+    padding-left: 20px;
+}
+
+.edit{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 350px;
+}
+
+.body-edit{
+    padding: 40px 0px 0px 348px;
+}
+
+.details{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-box input{
+    margin-right: 100px;
+    width: 95%;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    box-sizing: border-box;
+    border: 2px solid #FD7558;
+}
+
+input[type="password"]{
+    box-sizing: border-box;
+    border: 2px solid #FD7558;
+}
+.edit-button{
+    margin-left: 980px;
+}
+
+.body-profil table {
+    margin: 40px 350px;
+    width: 870px;
+}
+
+.body-profil table thead th{
+    padding-left: 10px;
+    padding-right: 100px;
+    height: 35px;
+}
+
+.body-profil table tbody td{
+    padding-right: 100px;
+}
+
+.tab-notif{
+    margin: 10px 670px;
+    height: 70px;
+    border-collapse: collapse;
+    border-spacing: none;
+    width: 580px;
+}
+
+.tab-notif tbody td {
+    padding-left: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+.tab-notif tbody p{
+    text-align: left;
+}
+
+.tab-notif thead th {
+    background-color: #FD7558;
+    color: #ffecaa;
+    text-align: left;
+}
+
+.tab-notif tbody td {
+    border-bottom: solid;
+    border-color: #FD7558;
+}
+
+.notif-button{
+    position: relative;
+    right: -700px;
+}
+
+.body-privasi p{
+    margin-top: 50px;
+    margin-left: 350px;
+}
+  
+.body-privasi tbody{
+    border-top: solid #FD7558;
+}
 
 

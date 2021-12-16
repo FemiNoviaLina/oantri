@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://kit.fontawesome.com/e5768abf45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+    <title>Oantri</title>
+</head>
+<body style="width: 100%; height: 50vw;" >
+  
+
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul  id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../html/">Outlet</a></li>
+                <li><a href="../html/about.html" class="active">Tentang Kami</a></li>
+                <li><a href="../html/homepage.html">Beranda</a></li>
+                <li><a href="../html/masuk.html">Masuk</a></li>
+                <li><a href="../html/daftar.html" class="outline-li">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+
+    <div class="page1">
+        <div class="div1">
+            <div class="card1">
+                <div class="subdiv1">
+                    <img src="../img/logo.png" class="icon1">
+                    <p class="teks">Apa itu Oantri?</p> 
+                </div>
+                <div class="subdiv2"">
+                    <p class="cardlink">
+                        <a href="#"></a>Lihat selengkapnya <i class="fas fa-arrow-right";"></i>
+                    </p>
+                    <div class="overlay">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="div2">
+            <div class="card2">
+                <div class="subdiv1">
+                    <i class="fas fa-handshake fa-2x" id="icon2"></i>
+                    <p class="teks">Bagaimana cara bermitra dengan</br>Oantri?</p>
+                </div>
+                <div class="subdiv2"">
+                    <p class="cardlink">
+                        <a href="#" class="link"></a>
+                        Lihat selengkapnya
+                        <i class="fas fa-arrow-right";"></i>
+                    </p>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="div1">
+            <div class="card2">
+                <div class="subdiv1">
+                    <i class="fas fa-users fa-2x" id="icon2"></i>
+                    <p class="teks">Bagaimana cara menggunakan Oantri?</p>
+                </div>
+                <div class="subdiv2">
+                    <p class="cardlink">
+                        <a href="#"></a>Lihat selengkapnya <i class="fas fa-arrow-right";></i>
+                    </p>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="card1">
+                <div class="subdiv1">
+                    <i class="fas fa-comments fa-2x" id="icon2"></i>
+                    <p class="teks">Pertanyaan yang sering ditanyakan </br>oleh user</p>
+                </div>
+                <div class="subdiv2"">
+                    <p class="cardlink">
+                        <a href="#"></a>Lihat selengkapnya <i class="fas fa-arrow-right";></i>
+                    </p>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

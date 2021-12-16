@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oantri - Outlet</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../outlet.html">Outlet</a></li>
+                <li><a href="../about.html">Tentang Kami</a></li>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../profile.html" class="active">Akun</a></li>
+            </ul>
+        </nav>
+        <!-- Nah ini icon buat "cari" -->
+        <a href="../outlet.html" class="cari">
+            <i class="fa fa-search"></i>
+        </a>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <div class="outlet-detail">
+        <div class="outlet-info">
+            <h1 class="outlet-name">Royal Salon</h1>
+            <div class="outlet-location">
+                <img src="../img/location.png">
+                <h3>Tugu, Malang</h3>
+            </div>
+            <div class="outlet-pic">
+                <img src="../img/royal-salon-photo.jpg" alt="Royal Salon">
+            </div>
+            <div class="outlet-description">
+                <h2>Deskripsi</h2>
+                <p>Rawat kecantikan Anda di Royal Salon & Spa, Bekasi. Baik Anda yang menginginkan potongan rambut sederhana atau perawatan spa yang memanjakan, Royal Salon & Spa hadir untuk merawat Anda dari ujung rambut hingga ujung kaki. Manjakan diri dalam paket Spa Bunga di mana Anda akan merasakan pijat relaksasi, batu panas, akupresur aura, dan berbagai perawatan lainnya. Lakukan perawatan wajah untuk membersihkan wajah Anda dari komedo dan kotoran yang menumpuk di wajah Anda atau pilih perawatan dermabrasi emas dan berlian wajah untuk wajah yang sehat dan bebas jerawat.</p>
+            </div>
+            <div class="outlet-location">
+                <h2>Detail Lokasi</h2>
+                <p>Hotel Tugu Malang Jalan Tugu No. 3, Jl. Kahuripan No.3, Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65119</p>
+            </div>
+        </div>
+        <div class="new-queue">
+            <h2>Detail Antri</h2>
+            <form action="">
+                <select name="layanan" id="layanan">
+                    <option value="">Pilih Layanan</option>
+                    <option value="1">Perawatan Wajah</option>
+                    <option value="2">Perawatan Rambu</option>
+                    <option value="3">Perawatan Pijat</option>
+                </select>
+                <select name="hari" id="hari">
+                    <option value="">Pilih Hari</option>
+                    <option value="1">Hari ini</option>
+                    <option value="2">Besok</option>
+                    <option value="3">Lusa</option>
+                </select>
+            </form>
+            <div class="estimasi">
+                <h2>Antrian saat ini: 3 </h2>
+                <h3> dari 10</h3>
+                <p>Estimasi setiap antrian dilayani dalam 60 menit</p>
+            </div>
+            <select name="waktu" id="waktu">
+                <option value=""> Pilih Waktu</option>
+            </select>
+            <button>
+                <a href="queue_detail.html">Antri Sekarang</a>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+    <script type="module" src="../js/data.js"></script>
+    <script type="module" src="../js/script2.js"></script>
+</body>
+</html>

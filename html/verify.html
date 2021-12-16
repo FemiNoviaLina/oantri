@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oantri</title>
+    <link rel="stylesheet" href="../css/masuk.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+    <div class="container">
+
+      
+    <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul  id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../outlet.html">Outlet</a></li>
+                <li><a href="../about.html">Tentang Kami</a></li>
+                <li><a href="../homepage.html">Beranda</a></li>
+                <li><a href="../masuk.html">Masuk</a></li>
+                <li><a href="../daftar.html" class="active">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+
+    <div class="body_container">
+        <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+            <img src="../img/atas.png" class="atas">
+                <div class="form_container">
+                    <h2 class="title_masuk">Verifikasi Akun</h2>
+    
+                    <form>
+
+                        <div class="box_masuk">
+                            <p>
+                                <p>Kami akan mengirimkan kode verifikasi melalui pesan WhatsApp. 
+                                    Pastikan nomor telepon Anda aktif dan sudah terdaftar pada WhatsApp.</p>  
+                            </p>  
+                        </div>
+
+                        <div class="box_masuk">
+                            <h3>Kode Verifikasi</h3>
+                            <input type="text" class="login">
+                        </div>
+    
+                        <button href="../html/regist.html">
+                            Kirim
+                        </button>
+    
+                        <div>
+                            <span class="akun_masuk">
+                                Belum menerima kode verifikasi?
+                            </span>
+                            <span class="daftar_masuk">
+                                <a href="../masuk.html">Kirim ulang</a>
+                            </span>
+                        </div>
+                    </form>
+                    
+                </div>
+            <img src="../img/bawah.png" class="bawah">
+    </div>
+    <!-- End body_container -->
+
+
+    </div>
+    <!-- End container -->
+
+
+
+    <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+    
+</body>
+</html>

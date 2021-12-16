@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oantri - Outlet</title>
+    <link rel="shortcut icon" href="../img/logo.ico" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="../outlet.html">Outlet</a></li>
+                <li><a href="../about.html">Tentang Kami</a></li>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../profile.html" class="active">Akun</a></li>
+            </ul>
+        </nav>
+        <!-- Nah ini icon buat "cari" -->
+        <a href="../outlet.html" class="cari">
+            <i class="fa fa-search"></i>
+        </a>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <div class="banner-outlet">
+        <img src="../img/logo-text.png" alt="Oantri">
+        <h2>Antri dengan mudah dan nyaman</h2>
+        <form action="">
+            <input type="text">
+            <button><img src="../img/search.png" alt="Cari outlet"></button>
+        </form>
+        <div style="height: 50px;"></div>
+    </div>
+    <div class="outlets">
+        <div class="outlet-filter">
+            <div class="filter-desc">
+                <img src="../img/filter-icon.jpg">
+                <h3>FILTER</h3>
+            </div>
+            <h3>Kategori</h3>
+            <div class="filter">
+                <div class="check">
+                    <input type="checkbox" name="kecantikan" id="kecantikan" value="kecantikan">
+                    <label for="kecantikan">Kecantikan</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="kesehatan" id="kesehatan" value="kesehatan">
+                    <label for="kesehatan">Kesehatan</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="restoran" id="restoran" value="restoran">
+                    <label for="restoran">Restoran</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="otomotif" id="otomotif" value="otomotif">
+                    <label for="otomotif">Otomotif</label>
+                </div>
+                <div class="others">
+                    <button>
+                        <img src="../img/others.png">
+                        <h3>Lainnya</h3>
+                    </button>
+                </div>
+            </div>
+            <h3>Lokasi</h3>
+            <div class="filter">
+                <div class="check">
+                    <input type="checkbox" name="jakarta" id="jakarta" value="jakarta">
+                    <label for="jakarta">Jakarta</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="bandung" id="bandung" value="bandung">
+                    <label for="bandung">Bandung</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="surabaya" id="surabaya" value="surabaya">
+                    <label for="surabaya">Surabaya</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="malang" id="malang" value="malang">
+                    <label for="malang">Malang</label>
+                </div>
+                <div class="others">
+                    <button>
+                        <img src="../img/others.png">
+                        <h3>Lainnya</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="outlet-cards">
+            <div id="outlet-cards">
+
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+            <!-- <div class="card">
+                <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
+                <div class="card-text">
+                    <h4>Royal Salon</h4>
+                </div>
+            </div>
+            <div class="card">
+                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
+                <div class="card-text">
+                    <h4>Royal Salon</h4>
+                </div>
+            </div>
+                <div class="card">
+                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
+                <div class="card-text">
+                    <h4>Royal Salon</h4>
+                </div>
+            </div>
+                <div class="card">
+                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
+                <div class="card-text">
+                    <h4>Royal Salon</h4>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
+    <script type="module" src="../js/data.js"></script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

@@ -12,8 +12,6 @@
     <title>Oantri</title>
 </head>
 <body style="width: 100%;" >
-  
-
     <header>
         <img src="../img/logo.png" class="logo">
         <nav>
@@ -29,18 +27,6 @@
         <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
         <!-- Icon menu ini buat tampilan responsive-nya -->
     </header>
-
-    <script>
-        var menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-        function togglemenu(){     
-            if(menuList.style.maxHeight == "0px") {
-                    menuList.style.maxHeight = "1300px";}
-            else { menuList.style.maxHeight = "0px"; }
-        }  
-    </script>
-
-
     <div class="page1">
         <div class="div1"></div>
         <div class="div2">
@@ -56,11 +42,9 @@
                 </div>
             </div>
             <div class="subdiv3"></div>
-           
         </div>
         <div class="div3"></div>
     </div>
-
     <div id="page2">
         <div class="div4">
         </div>
@@ -81,20 +65,14 @@
                         Lihat Outlet terfavorit di sini.
                     </a>
                 </div>
-                
-                
-    
             </div>
-            
             <div class="batas2">
-                
                 <div class="baris1">
                     <div class="gallery">
                         <a href="outlet.html">
                             <img class="image" src="../img/outlet-1.png" alt="Kecantikan" >
                             <div class="desc">Kecantikan</div>
                         </a>
-                        
                     </div>
                     <div class="gallery">
                         <a href="outlet.html">
@@ -104,7 +82,6 @@
                         </a>
                     </div>
                 </div>
-                
                 <div class="baris2">
                     <div class="gallery" id="kes">
                         <a href="outlet.html">
@@ -119,10 +96,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
-   
     <div id="page3">
         <div class="div6"></div>
         <div class="div7">
@@ -137,10 +112,17 @@
             </div>
             <div class="subdiv8"></div>
         </div>
-
         <div class="div8">
-        </div>
-        
+        </div>   
     </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
+    </script>
 </body>
 </html>

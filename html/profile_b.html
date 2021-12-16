@@ -1,0 +1,158 @@
+<!-- BUSINESS PARTNER'S BANTUAN -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <link rel="stylesheet" href="../css/profile_b.css" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+
+    <body>
+        <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+        <div class="container">
+            <!-- HEADER VERSI 3: Buat business partner -->
+            <header>
+                <img src="../img/logo.png" class="logo" />
+                <p class="partner">Business Partner Oantri</p>
+                <nav>
+                    <ul id="menuList">
+                        <!-- Kalo pas di pagenya, tambah class="active"-->
+                        <li>
+                            <a href="../profile_b.html" class="active"
+                                >Profil</a
+                            >
+                        </li>
+                        <li><a href="../antrianb.html">Antrian</a></li>
+                        <li>
+                            <a href="../settingb.html">Pengaturan</a>
+                        </li>
+                        <li><a href="../bantuanb.html">Bantuan</a></li>
+                        <li>
+                            <a href="../homepage.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nah ini icon buat "cari" -->
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+                <!-- Icon menu ini buat tampilan responsive-nya -->
+            </header>
+
+            <div class="body_container">
+                <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+                <table class="tabell">
+                    <tr>
+                        <td style="width: 20%">
+                            <h1 class="outlet-name">Gloskin Clinic</h1>
+                        </td>
+                        <td style="width: 30%">
+                            <table class="outlet-detail">
+                                <tr>
+                                    <td><img src="../img/calendar.png" /></td>
+                                    <td><h3>Senin - Sabtu</h3></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <table class="outlet-detail">
+                                <tr>
+                                    <td><img src="../img/location.png" /></td>
+                                    <td><h3>Tugu, Malang</h3></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="outlet-detail">
+                                <tr>
+                                    <td><img src="../img/clock.png" /></td>
+                                    <td><h3>10.00 - 18.00</h3></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><br><button href="../html/editb.html">Edit Profil Outlet</button></td>
+                    </tr>
+            
+                    </div>
+                </table>
+
+                <div class="box_image">
+                    <div class="front">
+                        <img src="../img/gloskin-clinic-photo.png" alt="" />
+                    </div>
+                    <div class="back">
+                        <img src="../img/gloskin-clinic-logo.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="outlet-description">
+                    <h2>Deskripsi</h2>
+                    <br>
+                    <p>
+                        “Art, Beauty & Perfection”. Gloskin Clinic berfokus pada
+                        pelayanan klinik kecantikan kualitas tinggi (Finest
+                        Aesthetic), GLOSKIN memberikan perawatan unggulan kelas
+                        dunia terbaik, terdepan, dan terpercaya di Indonesia.
+                        Klinik kami memberi hasil yang nyata, didukung oleh
+                        produk berkualitas dan peralatan canggih yang terus
+                        mengikuti perkembangan teknologi. Kami jamin Anda akan
+                        merasa sangat nyaman dan dimanjakan saat proses
+                        revitalisasi dan peremajaan berlangsung. Datang dan
+                        bergabunglah bersama kami!
+                    </p>
+                </div>
+
+                <div class="outlet-location">
+                    <h2>Detail Lokasi</h2>
+                    <br>
+                    <p>
+                        Hotel Tugu Malang Jalan Tugu No. 3, Jl. Kahuripan No.3,
+                        Klojen, Kec. Klojen, Kota Malang, Jawa Timur 65119
+                    </p>
+                </div>
+            </div>
+            <!-- End body_container -->
+        </div>
+        <!-- End container -->
+
+        <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

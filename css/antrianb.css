@@ -192,29 +192,48 @@ button:hover {
     width: 100%;
 }
 
+.titles {
+    margin: 30px;
+}
+
 table img {
     width: 60px;
     margin-right: 20px;
 }
 
-.lunas {
-    color: #0fa958;
+.service_list {
+    margin: 70px 0 70px 120px;
 }
 
-.warning {
-    color: rgb(225, 15, 15);
+.service_list li {
+    list-style: none;
+    display: inline-block;
+}
+
+.service_list li a {
+    text-decoration: none;
+    background-color: #ffecaa;
+    color: #fd7558;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700px;
+    font-size: 26px;
+    padding: 50px 30px;
+    margin-right: 40px;
+}
+
+.service_list li a:hover {
+    font-weight: 800;
+    background-color: #fd7558;
+    color: #ffecaa;
 }
 
 .tabell {
-    border: 3px solid #fd7558;
-    margin: 50px;
-    padding: 20px;
-    width: 90vw;
-    border-radius: 5px;
+    margin: -20px 0 70px 120px;
 }
 
-table input[type="text"],
-table input[type="password"] {
+table input[type="text"] {
     border: 3px solid #fd7558;
     border-radius: 1px;
     outline: none;
@@ -225,7 +244,7 @@ table input[type="password"] {
 }
 
 table input[type="number"] {
-    width: 5vw;
+    width: 6vw;
     border: 3px solid #fd7558;
     border-radius: 1px;
     outline: none;

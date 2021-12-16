@@ -14,18 +14,18 @@
 </head>
 <body>
     <header>
-        <img src="../img/logo.png" class="logo">
+        <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
         <nav>
             <ul id="menuList">
                 <!-- Kalo pas di pagenya, tambah class="active"-->
                 <li><a href="outlet.html">Outlet</a></li>
                 <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="index.html">Beranda</a></li>
+                <li><a href="../index.html">Beranda</a></li>
                 <li><a href="profile.html" class="active">Akun</a></li>
             </ul>
         </nav>
         <!-- Nah ini icon buat "cari" -->
-        <a href="../outlet.html" class="cari">
+        <a href="outlet.html" class="cari">
             <i class="fa fa-search"></i>
         </a>
         <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
@@ -55,5 +55,6 @@
             else { menuList.style.maxHeight = "0px"; }
         }  
     </script>
+    <script src="../js/script3.js"></script>
 </body>
 </html>

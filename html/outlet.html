@@ -13,22 +13,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="head1">
+        <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        <nav>
+            <ul  id="menuList">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="./html/outlet.html">Outlet</a></li>
+                <li><a href="./html/about.html">Tentang Kami</a></li>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="./html/masuk.html">Masuk</a></li>
+                <li><a href="./html/daftar.html" class="outline-li">Daftar</a></li>
+            </ul>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <header id="head2">
         <img src="../img/logo.png" class="logo">
         <nav>
-            <ul id="menuList">
+            <ul id="menuList2">
                 <!-- Kalo pas di pagenya, tambah class="active"-->
-                <li><a href="../outlet.html">Outlet</a></li>
-                <li><a href="../about.html">Tentang Kami</a></li>
-                <li><a href="../index.html">Beranda</a></li>
-                <li><a href="../profile.html" class="active">Akun</a></li>
+                <li><a href="./html/outlet.html">Outlet</a></li>
+                <li><a href="./html/about.html">Tentang Kami</a></li>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="./html/profile.html">Akun</a></li>
             </ul>
         </nav>
         <!-- Nah ini icon buat "cari" -->
-        <a href="../outlet.html" class="cari">
+        <a href="./html/outlet.html" class="cari">
             <i class="fa fa-search"></i>
         </a>
-        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu2()">
         <!-- Icon menu ini buat tampilan responsive-nya -->
     </header>
     <div class="banner-outlet">
@@ -46,8 +61,12 @@
                 <img src="../img/filter-icon.jpg">
                 <h3>FILTER</h3>
             </div>
-            <h3>Kategori</h3>
-            <div class="filter">
+            <div class="filter-category" onclick="showCategoryFilter()">
+                <h3>Kategori</h3>
+                <img class="expand-filter" src="../img/others.png">
+                <hr>
+            </div>
+            <div class="filter" id="category-filter">
                 <div class="check">
                     <input type="checkbox" name="kecantikan" id="kecantikan" value="kecantikan">
                     <label for="kecantikan">Kecantikan</label>
@@ -71,8 +90,12 @@
                     </button>
                 </div>
             </div>
-            <h3>Lokasi</h3>
-            <div class="filter">
+            <div class="filter-category" onclick="showLocationFilter()">
+                <h3>Lokasi</h3>
+                <img class="expand-filter" src="../img/others.png">
+                <hr>
+            </div>
+            <div class="filter" id="location-filter">
                 <div class="check">
                     <input type="checkbox" name="jakarta" id="jakarta" value="jakarta">
                     <label for="jakarta">Jakarta</label>
@@ -98,43 +121,14 @@
             </div>
         </div>
         <div class="outlet-cards">
-            <div id="outlet-cards">
-
-            </div>
+            <div id="outlet-cards"></div>
             <div class="pagination">
                 <a href="#">&laquo;</a>
                 <a href="#">1</a>
                 <a class="active" href="#">2</a>
                 <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
                 <a href="#">&raquo;</a>
               </div>
-            <!-- <div class="card">
-                <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
-                <div class="card-text">
-                    <h4>Royal Salon</h4>
-                </div>
-            </div>
-            <div class="card">
-                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
-                <div class="card-text">
-                    <h4>Royal Salon</h4>
-                </div>
-            </div>
-                <div class="card">
-                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
-                <div class="card-text">
-                    <h4>Royal Salon</h4>
-                </div>
-            </div>
-                <div class="card">
-                    <img src="../img/royal-salon-logo.jpg" alt="Logo Royal Salon">
-                <div class="card-text">
-                    <h4>Royal Salon</h4>
-                </div>
-            </div> -->
         </div>
     </div>
     <script>
@@ -145,6 +139,37 @@
                     menuList.style.maxHeight = "1300px";}
             else { menuList.style.maxHeight = "0px"; }
         }  
+
+        var menuList2 = document.getElementById("menuList2");
+        menuList2.style.maxHeight = "0px";
+        function togglemenu2(){     
+            if(menuList2.style.maxHeight == "0px") {
+                    menuList2.style.maxHeight = "1300px";}
+            else { menuList2.style.maxHeight = "0px"; }
+        }  
+
+        if(!window.sessionStorage.getItem("loggedIn")) {
+            window.sessionStorage.setItem("loggedIn", "false");
+        }
+
+        if(window.sessionStorage.getItem("loggedIn") == "true") {
+            document.getElementById("head1").style.display = "none";
+            document.getElementById("head2").style.display = "flex";
+        } 
+
+        else {
+            document.getElementById("head1").style.display = "flex";
+            document.getElementById("head2").style.display = "none";
+        } 
+
+        function showCategoryFilter() {
+            document.getElementById("category-filter").classList.toggle("show");
+        }
+
+        function showLocationFilter() {
+            document.getElementById("location-filter").classList.toggle("show");
+        }
+
     </script>
     <script type="module" src="../js/data.js"></script>
     <script type="module" src="../js/script.js"></script>

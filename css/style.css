@@ -161,7 +161,7 @@ button:hover {
         display: block;
     }
 
-    #menuList {
+    #menuList, #menuList2 {
         overflow: hidden;
         transition: 0.5s;
     }
@@ -187,6 +187,10 @@ button:hover {
     .banner-outlet img{
         width: 300px;
         padding: 50px 10px 20px 10px;
+    }
+
+    .banner-outlet h2 {
+        font-size: 20px;
     }
 }
 
@@ -232,6 +236,7 @@ button:hover {
 .filter-desc {
     display: flex;
     align-items: center;
+    padding-bottom: 16px;
 }
 
 .filter-desc img {
@@ -260,6 +265,21 @@ button:hover {
     margin: 10px 10px;
 }
 
+.filter-category h3 {
+    display: inline;
+    padding: 0 10px 0 0;
+}
+
+.filter-category hr {
+    display: none;
+}
+
+.expand-filter {
+    display: none;
+    width: 20px;
+    float: right;
+}
+
 .others button {
     display: flex;
     align-items: center;
@@ -284,15 +304,18 @@ button:hover {
     margin: 0 10px;
 }
 
+.outlet-cards {
+    min-width: 250px;
+}
+
 .outlet-cards #outlet-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-shrink: 3;
-    min-width: 250px;
 }
 
-.card{
+.card {
     margin: 10px 10px 30px 10px;
 }
 
@@ -351,7 +374,7 @@ button:hover {
 .outlet-info {
     padding: 20px 40px;
     width: 60%;
-    min-width: 300px;
+    min-width: 360px;
     float: left;
     text-align: justify;
     text-justify: inter-word;
@@ -370,7 +393,7 @@ button:hover {
 }
 
 .outlet-info .outlet-pic img {
-    width: 700px;
+    width: 100%;
 }
 
 .outlet-location {
@@ -382,6 +405,11 @@ button:hover {
 .outlet-info .outlet-location img {
     height: 20px;
     display: inline-block;
+}
+
+.outlet-location .map img{
+    width: 100%;
+    height: auto;
 }
 
 .outlet-info .outlet-location h3 {
@@ -399,9 +427,32 @@ button:hover {
         background-size: cover;
     }
 
-    .outlet-info .outlet-pic img {
-        width: 300px;
+    .outlet-filter {
+        width: 100%;
+        max-width: 768px;
     }
+
+    .filter {
+        padding: 20px 0px 30px 0px;
+        display: none;
+    }
+
+    .expand-filter {
+        display: inline-block;
+    }
+
+    .filter-category {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .filter-category hr {
+        display: block;
+    }
+}
+
+.show {
+    display: block;
 }
 
 .new-queue {
@@ -454,6 +505,7 @@ button:hover {
     padding: 20px 20px;
     margin: 30px auto;
     width: 40%;
+    min-width: 300px;
     background-color: #FFECAA;
     border: #FD7558 3px solid;
 }

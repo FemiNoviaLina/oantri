@@ -18,20 +18,16 @@
         <div class="container">
             <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
             <header>
-                <img src="../img/logo.png" class="logo" />
+                <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
                 <nav>
                     <ul id="menuList">
                         <!-- Kalo pas di pagenya, tambah class="active"-->
-                        <li><a href="../outlet.html">Outlet</a></li>
-                        <li><a href="../about.html">Tentang Kami</a></li>
-                        <li><a href="../homepage.html">Beranda</a></li>
+                        <li><a href="outlet.html">Outlet</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="masuk.html" class="active">Masuk</a></li>
                         <li>
-                            <a href="../masuk.html" class="active">Masuk</a>
-                        </li>
-                        <li>
-                            <a href="../daftar.html" class="outline-li"
-                                >Daftar</a
-                            >
+                            <a href="daftar.html" class="outline-li">Daftar</a>
                         </li>
                     </ul>
                 </nav>
@@ -64,12 +60,12 @@
 
                         <a href="#" class="lupa_masuk"> Lupa password? </a>
 
-                        <button href="../html/homepage.html">Masuk</button>
+                        <button id="login">Masuk</button>
 
                         <div>
                             <span class="akun_masuk"> Belum punya akun? </span>
                             <span class="daftar_masuk">
-                                <a href="../daftar.html">Daftar</a>
+                                <a href="daftar.html">Daftar</a>
                             </span>
                         </div>
                     </form>
@@ -93,6 +89,24 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            if(!window.sessionStorage.getItem("loggedIn")) {
+                window.sessionStorage.setItem("loggedIn", "false");
+            }
+
+            if(window.sessionStorage.getItem("loggedIn") == "true") {
+                window.location.href = "../index.html";
+            }
+
+            const loginButton = document.getElementById("login");
+            loginButton.onclick = function(e) {
+                e.preventDefault();
+                if(window.sessionStorage.getItem("loggedIn") == "false") {
+                    window.sessionStorage.setItem("loggedIn", "true");
+                }
+                window.location.href = "../index.html";
+            };
+            
         </script>
     </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oantri</title>
     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="shortcut icon" href="../img/logo.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -30,16 +31,6 @@
             <!-- Icon menu ini buat tampilan responsive-nya -->
         </header>
         <div class = 'maindown'>
-            <div class="body-profil2">
-                <h2>
-                    <ul>
-                        <li><a href="Pengaturan.html" class="pointer">Edit Profil</a></li>
-                        <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
-                        <li><a href="notif.html" class="hide">Notifikasi</a></li>
-                        <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
-                    </ul> 
-                </h2>
-            </div>
             <div class="body-profil">
                 <div class="header-2">
                     <img src="../img/left-arrow.png" class="icon_header2">
@@ -49,10 +40,21 @@
                         </ul>
                     </h2>
                 </div>
-                <div class="edit">
-                    <h1>Edit Profil</h1>
+                <div class="body-profil2">
+                    <div class="body-pro">
+                        <h2>Edit Profil <img src="../img/dropdown.png" onclick="dropShow"></h2>
+                        <h2>
+                            <ul id="down">
+                                <li><a href="Pengaturan.html" class="pointer">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="hide">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
                 </div>
                 <div class="body-edit">
+                    <h1>Edit Profil</h1>
                     <div class="input-box">
                         <span class="details">Nama</span>
                         <input type="text" value="John Doe">
@@ -79,7 +81,14 @@
                 if(menuList.style.maxHeight == "0px") {
                         menuList.style.maxHeight = "1300px";}
                 else { menuList.style.maxHeight = "0px"; }
-            }  
+            }
+            // var down = document.getElementById("down");
+            // down.style.maxHeight = "0px";
+            // function dropShow(){
+            //     if(down.style.maxHeight == "0px"){
+            //         down.style.maxHeight = "1300px";}
+            //     else{down.style.maxHeight = "0px";}
+            // }
         </script>
 </body>
 </html>

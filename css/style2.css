@@ -33,6 +33,10 @@ p {
     font-size: 18px;
 }
 
+li{
+    list-style: none;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
@@ -227,6 +231,68 @@ button:hover {
         right: -3%;
     }
 
+    .tab{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+
+    .Rbutton{
+        
+        
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .header{
+        width: 100%;
+    }
+
+    .body-profil{
+        width: 100%;
+        display: block;
+    }
+
+    .maindown .body-profil2{
+        display: block;
+        float: none;
+        height: 80px;
+        width: 100%;
+    }
+
+    .maindown .body-profil2 li{
+        display: inline-block;
+    }
+
+    /* .body-profil2 .body-pro img{
+        display: inline-block;
+        float: right;
+    }
+
+    .body-pro ul {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .body-pro ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    } */
 
 }
 
@@ -283,7 +349,8 @@ button:hover {
 }
 
 .tab {
-    margin: 10px 670px;
+    float: left;
+
     height: 70px;
     border-collapse: collapse;
     border-spacing: none;
@@ -317,14 +384,9 @@ button:hover {
     width: 13px;
 }
 
-.Rbutton {
-    display: flex;
-    position: absolute;
-    bottom: 12%;
-    right: 13%;
-    flex-direction: column;
-    justify-content: right;
-    margin-top: 20px;
+.Rbutton { 
+    position: relative;
+    top: 20px;
 }
 
 .Rbutton :hover {
@@ -387,11 +449,6 @@ button:hover {
     background-color: #FD7558;
 }
 
-.body-profil2 li{
-    position: relative;
-    top: 80px;
-    
-}
 
 .body-profil2 h2{
     border-bottom: none;
@@ -401,6 +458,18 @@ button:hover {
 .body-profil2 a:hover{
     color: #ffecaa; opacity: 1;
 }
+
+/* .body-pro h2{
+    padding: 20px;
+    text-align: left;
+}
+
+.body-pro img{
+    padding: 0px;
+    width: 40px;
+    cursor: pointer;
+    display: inline;
+} */
 
 .pointer{
     position: relative;
@@ -428,14 +497,14 @@ button:hover {
     padding-left: 20px;
 }
 
-.edit{
-    margin-top: 20px;
-    margin-bottom: -20px;
-    margin-left: 350px;
+.body-edit{
+    display: inline-block;
+    padding: 10px 30px;
+    width: 75%;
 }
 
-.body-edit{
-    padding: 40px 0px 0px 348px;
+.body-edit h1{
+    padding: 10px 0px;
 }
 
 .details{
@@ -456,12 +525,22 @@ input[type="text"]{
     border: 2px solid #FD7558;
 }
 
+input[type="text"]:focus{
+    outline-color: #FD7558;
+}
+
 input[type="password"]{
     box-sizing: border-box;
     border: 2px solid #FD7558;
 }
+
+input[type="password"]{
+    outline-color: #FD7558;
+}
+
 .edit-button{
-    margin-left: 980px;
+    float: right;
+    margin-right: 70px;
 }
 
 .body-profil table {
@@ -521,5 +600,3 @@ input[type="password"]{
 .body-privasi tbody{
     border-top: solid #FD7558;
 }
-
-

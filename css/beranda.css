@@ -45,7 +45,7 @@ header {
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: #FFECAA;
+    background-color: #fff;
     padding-bottom: 13px;
 }
 
@@ -91,7 +91,7 @@ nav ul li a:hover {
 
 .outline-li {
     padding: 10px 20px;
-    background-color: #FFECAA;
+    background-color: #FFF;
     border-color: #FD7558;
     border: solid;
     color: #FD7558;

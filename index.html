@@ -12,8 +12,8 @@
     <title>Oantri</title>
 </head>
 <body style="width: 100%;" >
-    <header>
-        <img src="./img/logo.png" class="logo">
+    <header id="head1">
+        <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
         <nav>
             <ul  id="menuList">
                 <!-- Kalo pas di pagenya, tambah class="active"-->
@@ -25,6 +25,24 @@
             </ul>
         </nav>
         <img src="./img/menu.png" class="menu_icon" onclick="togglemenu()">
+        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <header id="head2">
+        <img src="../img/logo.png" class="logo">
+        <nav>
+            <ul id="menuList2">
+                <!-- Kalo pas di pagenya, tambah class="active"-->
+                <li><a href="./html/outlet.html">Outlet</a></li>
+                <li><a href="./html/about.html">Tentang Kami</a></li>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="./html/profile.html">Akun</a></li>
+            </ul>
+        </nav>
+        <!-- Nah ini icon buat "cari" -->
+        <a href="./html/outlet.html" class="cari">
+            <i class="fa fa-search"></i>
+        </a>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu2()">
         <!-- Icon menu ini buat tampilan responsive-nya -->
     </header>
     <div class="page1">
@@ -76,7 +94,11 @@
                     </div>
                     <div class="gallery">
                         <a href="./html/outlet.html">
+<<<<<<< HEAD
                             <img class="image" src="./img/outlet-2.png" alt="Restoran" >
+=======
+                            <img class="image" src="./img/outlet-2.png" alt="Kecantikan" >
+>>>>>>> f6935e2bb69f6bb3d33ac6e7da68a73419fbd2fd
                             <div class="desc">Restoran</div>
                             
                         </a>
@@ -123,6 +145,28 @@
                     menuList.style.maxHeight = "1300px";}
             else { menuList.style.maxHeight = "0px"; }
         }  
+
+        var menuList2 = document.getElementById("menuList2");
+        menuList2.style.maxHeight = "0px";
+        function togglemenu2(){     
+            if(menuList2.style.maxHeight == "0px") {
+                    menuList2.style.maxHeight = "1300px";}
+            else { menuList2.style.maxHeight = "0px"; }
+        }  
+
+        if(!window.sessionStorage.getItem("loggedIn")) {
+            window.sessionStorage.setItem("loggedIn", "false");
+        }
+
+        if(window.sessionStorage.getItem("loggedIn") == "true") {
+            document.getElementById("head1").style.display = "none";
+            document.getElementById("head2").style.display = "flex";
+        } 
+
+        else {
+            document.getElementById("head1").style.display = "flex";
+            document.getElementById("head2").style.display = "none";
+        }
     </script>
 </body>
 </html>

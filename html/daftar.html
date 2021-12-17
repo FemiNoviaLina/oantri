@@ -18,7 +18,9 @@
         <div class="container">
             <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
             <header>
-                <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+                <a href="../index.html"
+                    ><img src="../img/logo.png" class="logo"
+                /></a>
                 <nav>
                     <ul id="menuList">
                         <!-- Kalo pas di pagenya, tambah class="active"-->
@@ -58,12 +60,12 @@
                             </p>
                         </div>
 
-                        <button href="../html/verify.html">Daftar</button>
+                        <button id="register">Daftar</button>
 
                         <div>
                             <span class="akun_masuk"> Sudah punya akun? </span>
                             <span class="daftar_masuk">
-                                <a href="../masuk.html">Masuk</a>
+                                <a href="masuk.html">Masuk</a>
                             </span>
                         </div>
                     </form>
@@ -86,6 +88,20 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            if (!window.sessionStorage.getItem("loggedIn")) {
+                window.sessionStorage.setItem("loggedIn", "false");
+            }
+
+            if (window.sessionStorage.getItem("loggedIn") == "true") {
+                window.location.href = "../index.html";
+            }
+
+            const registerButton = document.getElementById("register");
+            registerButton.onclick = function (e) {
+                e.preventDefault();
+                window.location.href = "verify.html";
+            };
         </script>
     </body>
 </html>

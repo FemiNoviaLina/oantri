@@ -161,7 +161,7 @@ button:hover {
         display: block;
     }
 
-    #menuList {
+    #menuList, #menuList2 {
         overflow: hidden;
         transition: 0.5s;
     }
@@ -236,6 +236,7 @@ button:hover {
 .filter-desc {
     display: flex;
     align-items: center;
+    padding-bottom: 16px;
 }
 
 .filter-desc img {
@@ -262,6 +263,21 @@ button:hover {
 .filter .check input[type="checkbox"] {
     transform: scale(1.5);
     margin: 10px 10px;
+}
+
+.filter-category h3 {
+    display: inline;
+    padding: 0 10px 0 0;
+}
+
+.filter-category hr {
+    display: none;
+}
+
+.expand-filter {
+    display: none;
+    width: 20px;
+    float: right;
 }
 
 .others button {
@@ -410,6 +426,33 @@ button:hover {
         width: 100%;
         background-size: cover;
     }
+
+    .outlet-filter {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .filter {
+        padding: 20px 0px 30px 0px;
+        display: none;
+    }
+
+    .expand-filter {
+        display: inline-block;
+    }
+
+    .filter-category {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .filter-category hr {
+        display: block;
+    }
+}
+
+.show {
+    display: block;
 }
 
 .new-queue {

@@ -1,5 +1,3 @@
-<!-- BUSINESS PARTNER'S BANTUAN -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,17 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Oantri Business Partner</title>
         <link rel="shortcut icon" href="../img/logo.ico" />
-        <link rel="stylesheet" href="../css/settingb.css" />
+        <link rel="stylesheet" href="../css/business_settings.css" />
         <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
         kalau header versi 1 tidak perlu ini sih -->
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
@@ -26,17 +22,24 @@
         <div class="container">
             <!-- HEADER VERSI 3: Buat business partner -->
             <header>
-                <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+                <a href="../index.html"
+                    ><img src="../img/logo.png" class="logo"
+                /></a>
                 <p class="partner">Business Partner Oantri</p>
                 <nav>
                     <ul id="menuList">
                         <!-- Kalo pas di pagenya, tambah class="active"-->
-                        <li><a href="profile_b.html">Profil</a></li>
-                        <li><a href="antrianb.html">Antrian</a></li>
-                        <li><a href="settingb.html" class="active">Pengaturan</a></li>
-                        <li><a href="bantuanb.html">Bantuan</a></li>
-                        <li><a href="../index.html" class="outline-li">Keluar</a></li>
-                    </ul>
+                        <li><a href="bussiness_profile.html">Profil</a></li>
+                        <li><a href="business_queue.html">Antrian</a></li>
+                        <li><a href="business_settings.html" class="active">Pengaturan</a></li>
+                        <li>
+                            <a href="business_help.html">Bantuan</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
                 </nav>
                 <!-- Nah ini icon buat "cari" -->
                 <img
@@ -46,6 +49,16 @@
                 />
                 <!-- Icon menu ini buat tampilan responsive-nya -->
             </header>
+
+            <div class="warning">
+                Hi, Admin Oantri!
+                <br>
+                Silahkan mengakses halaman ini 
+                <br>
+                melalui perangkat komputer Anda.
+                <br>
+                Terima kasih ^^
+            </div>
 
             <div class="body_container">
                 <!-- Nah di sini buat isi page-nya, selamat bekerja
@@ -256,7 +269,7 @@
                         <td></td>
                         <td></td>
                         <td>
-                            <p class="warning">
+                            <p class="warn-sign">
                                 Password yang baru akan diterapkan pada seluruh
                                 akun Admin
                                 <i class="fa fa-exclamation-triangle"></i>

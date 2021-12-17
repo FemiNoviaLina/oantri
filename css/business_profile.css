@@ -16,14 +16,12 @@ h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
-    color: #fd7558;
 }
 
 h2 {
     font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
-    color: #fd7558;
 }
 
 h3 {
@@ -92,7 +90,7 @@ nav ul li a:hover {
 
 .outline-li {
     padding: 10px 20px;
-    background-color: #ffecaa;
+    background-color: #fff;
     border-color: #fd7558;
     border: solid;
     color: #fd7558;
@@ -103,7 +101,7 @@ nav ul li a:hover {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -121,6 +119,29 @@ nav ul li a:hover {
     width: 27px;
     cursor: pointer;
     display: none;
+}
+
+.warning {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .warning {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        font-family: "Noto Sans";
+        font-weight: 700;
+        font-size: 40px;
+        color: #fd7558;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .body_container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -151,7 +172,7 @@ nav ul li a:hover {
     nav ul li a:hover,
     .outline-li:hover {
         background-color: #fd7558;
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 
@@ -170,7 +191,7 @@ nav ul li a:hover {
 }
 
 /* Untuk button */
-button {
+.button {
     background-color: #fd7558;
     border: solid;
     color: white;
@@ -181,7 +202,7 @@ button {
     font-size: 20px;
 }
 
-button:hover {
+.button:hover {
     border: solid;
     border-color: #fd7558;
     color: #fd7558;
@@ -192,44 +213,67 @@ button:hover {
     width: 100%;
 }
 
-table img {
-    width: 60px;
-    margin-right: 20px;
+.box_image {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 360px;
+    right: -10%;
+    top: 43%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.lunas {
-    color: #0fa958;
+.box_image img {
+    width: 100%;
 }
 
-.warning {
-    color: rgb(225, 15, 15);
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 2;
+}
+
+.back {
+    transform: perspective(1000px) rotateY(180deg);
+    z-index: 1;
+}
+
+.box_image:hover .front {
+    transform: perspective(1000px) rotateY(-180deg);
+    z-index: 2;
+}
+.box_image:hover .back {
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 1;
 }
 
 .tabell {
-    border: 3px solid #fd7558;
-    margin: 50px;
-    padding: 20px;
-    width: 90vw;
-    border-radius: 5px;
+    margin: 20px 0 70px 80px;
+    width: 60%;
 }
 
-table input[type="text"],
-table input[type="password"] {
-    border: 3px solid #fd7558;
-    border-radius: 1px;
-    outline: none;
-    font-size: 20px;
-    padding: 5px;
-    width: 38vw;
-    margin-bottom: 10px;
+.tabell td {
+    padding: 10px;
 }
 
-table input[type="number"] {
-    width: 5vw;
-    border: 3px solid #fd7558;
-    border-radius: 1px;
-    outline: none;
-    font-size: 20px;
-    padding: 5px;
-    margin-bottom: 10px;
+.tabell img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.outlet-description,
+.outlet-location {
+    width: 45%;
+    margin: 20px 0 40px 80px;
 }

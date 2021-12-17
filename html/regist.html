@@ -18,7 +18,9 @@
         <div class="container">
             <!-- HEADER VERSI 1: Sebelum user masuk/daftar -->
             <header>
-                <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+                <a href="../index.html"
+                    ><img src="../img/logo.png" class="logo"
+                /></a>
                 <nav>
                     <ul id="menuList">
                         <!-- Kalo pas di pagenya, tambah class="active"-->
@@ -26,7 +28,7 @@
                         <li><a href="about.html">Tentang Kami</a></li>
                         <li><a href="../index.html">Beranda</a></li>
                         <li><a href="masuk.html">Masuk</a></li>
-                        <li><a href="../daftar.html" class="active">Daftar</a></li>
+                        <li><a href="daftar.html" class="active">Daftar</a></li>
                     </ul>
                 </nav>
                 <img
@@ -65,7 +67,7 @@
                             <input type="password" class="login" />
                         </div>
 
-                        <button href="../html/success.html">Buat Akun</button>
+                        <button id="register">Buat Akun</button>
                     </form>
                 </div>
                 <img src="../img/bawah.png" class="bawah" />
@@ -86,6 +88,21 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            if (!window.sessionStorage.getItem("loggedIn")) {
+                window.sessionStorage.setItem("loggedIn", "false");
+            }
+
+            if (window.sessionStorage.getItem("loggedIn") == "true") {
+                window.location.href = "../index.html";
+            }
+
+            const registerButton = document.getElementById("register");
+            registerButton.onclick = function (e) {
+                e.preventDefault();
+                window.sessionStorage.setItem("loggedIn", "true");
+                window.location.href = "success.html";
+            };
         </script>
     </body>
 </html>

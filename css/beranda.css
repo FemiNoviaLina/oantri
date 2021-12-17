@@ -453,7 +453,6 @@ img.image:hover{
     height: 100%;
     float: left;
     box-sizing: border-box;
-    border: 1px solid orange;
 }
 
 .subdiv7{
@@ -462,7 +461,6 @@ img.image:hover{
     float: left;
     height: 100%;
     box-sizing: border-box;
-    border: 1px solid black;
     background: rgb(255, 236, 170); 
     background: rgba(255, 236, 170, 0.5);
 }
@@ -472,7 +470,6 @@ img.image:hover{
     float: right;
     height: 100%;
     box-sizing: border-box;
-    border: 1px solid turquoise;
 }
 
 .div6 {

@@ -23,11 +23,11 @@
                 </div>
                 <nav>
                     <div class="navigation" id="menuList">
-                        <a href="outlet.html" class="active">Outlet</a>
+                        <a href="outlet.html">Outlet</a>
                         <a href="about.html">Tentang Kami</a>
                         <a href="../index.html">Beranda</a>
-                        <a href="#">Masuk</a>
-                        <a href="daftar.html" class="outline-li">Daftar</a>
+                        <a href="#" class="active">Masuk</a>
+                        <a href="daftar_1.html" class="outline-li">Daftar</a>
                     </div>
                 </nav>
                 <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
@@ -44,17 +44,17 @@
                     <form>
                         <div class="box_masuk">
                             <h3>Email atau no. handphone</h3>
-                            <input type="text" class="login" />
+                            <input type="text" class="login" id="emailphone" />
                         </div>
 
                         <div class="box_masuk">
                             <h3>Password</h3>
-                            <input type="password" class="login" />
+                            <input type="password" class="login" id="pass" />
                         </div>
 
                         <a href="#" class="lupa_masuk"> Lupa password? </a>
 
-                        <button href="../index.html">Masuk</button>
+                        <button id="login">Masuk</button>
 
                         <div>
                             <span class="akun_masuk"> Belum punya akun? </span>
@@ -92,14 +92,21 @@
                 window.location.href = "../index.html";
             }
 
-            const loginButton = document.getElementById("login");
-            loginButton.onclick = function (e) {
-                e.preventDefault();
-                if (window.sessionStorage.getItem("loggedIn") == "false") {
+            console.log(document.getElementsByClassName("login"))
+
+            document.getElementById("login").addEventListener("click", function() {
+                event.preventDefault();
+                const email = document.getElementById("emailphone").value;
+                const pass = document.getElementById("pass").value;
+
+                if(email == "ruthieoantri@gmail.com" && pass == "ruthieoantri") {
                     window.sessionStorage.setItem("loggedIn", "true");
+                    window.location.href = "bussiness_profile.html";
+                } else {
+                    window.sessionStorage.setItem("loggedIn", "true");
+                    window.location.href = "../index.html";
                 }
-                window.location.href = "../index.html";
-            };
+            });
         </script>
     </body>
 </html>

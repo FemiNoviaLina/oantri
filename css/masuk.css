@@ -157,22 +157,23 @@ header {
 
 /* Untuk button */
 
-button {
-    background-color: #fd7558;
+.button {
+    padding: 10px 90px;
+    width: 100px;
+    border-color: #fd7558;
     border: solid;
-    color: white;
+    color: #fff;
+    background-color: #fd7558;
     cursor: pointer;
-    transition: 0.7s;
-    margin: 40px 0;
-    padding: 14px 80px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
-button:hover {
+.button:hover {
     border: solid;
     border-color: #fd7558;
+    background-color: #fff;
     color: #fd7558;
-    background-color: white;
+    text-decoration: none;
 }
 
 .body_container {

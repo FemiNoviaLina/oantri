@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    background-color: #FFECAA;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 4px 0;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo div {
+    min-width: 380px;
+    color: #FD7558;
+    font-size: 22px;
+}
+
+
+.navigation a {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 130px;
+    height: 100%;
+    padding: 22.5px 0;
+    color: #FD7558;
+    margin: 0px 5px;
+}
+
+.navigation a:hover {
+    font-weight: 900;
+}
+
+.active {
+    border-bottom: #FD7558 6px solid;
+    font-weight: 900;
+}
+
+.menu_icon {
+    width: 27px;
+    cursor: pointer;
+    display: none;
+    padding: 26px 0;
+}
+
+.navigation .outline-li {
+    margin-right: 20px;
+    padding: 7px 5px;
+    width: 100px;
+    border-color: #fd7558;
+    border: solid;
+    color: #fd7558;
+    cursor: pointer;
+}
+
+.outline-li:hover {
+    border: solid;
+    border-color: #fd7558;
+    background-color: #fd7558;
+    color: #ffecaa;
+    text-decoration: none;
+}
+
+.navigation a.cari {
+    color: #fd7558;
+    font-size: 20px;
+    padding: 0;
+    width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .navigation {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav .navigation a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation .active {
+        background-color: #fff;
+        color: #fd7558;
+    }
+
+    nav .navigation a:not(.active):hover {
+        color: #ffecaa;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+        max-height: 0px;
+    }
+}
+

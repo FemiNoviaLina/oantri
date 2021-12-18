@@ -50,7 +50,7 @@
                     <button>
                     <a href="Pengaturan.html">Pengaturan Akun</a>
                     </button>
-                    <button>Keluar</button>
+                    <button onclick="signOut()">Keluar</button>
                 </div>
             </div>
         </div>
@@ -64,6 +64,11 @@
                     menuList.style.maxHeight = "1300px";}
             else { menuList.style.maxHeight = "0px"; }
         }  
+
+        signOut = () => {
+            sessionStorage.setItem("loggedIn", "false")
+            window.location.href = "../index.html";
+        }
     </script>
 </body>
 </html>

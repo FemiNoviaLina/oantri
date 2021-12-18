@@ -206,6 +206,11 @@ button:hover {
     width: 100%;
 }
 
+.tabelR button {
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
     .nav-body2 {
         display: none;
@@ -229,20 +234,12 @@ button:hover {
         right: -3%;
     }
 
-    .tab{
-        width: 100%;
-    }
-
     .body-profil .tabel{
         padding-left: 5px;
     }
 
     .nav-body .tabelR{
         padding: 0px 0px 0px 0px;
-    }
-
-    .Rbutton{
-        margin-right: 80px;
     }
 }
 
@@ -353,12 +350,10 @@ button:hover {
 }
 
 .nav-body table{
-    margin: 20px 0px 0px 30px;
+    margin: 20px 0px 30px 30px;
 }
 
 .tab {
-    float: left;
-    height: 70px;
     border-collapse: collapse;
     border-spacing: none;
     width: 580px;
@@ -387,7 +382,14 @@ button:hover {
 
 .tab tbody a{
     background-color: #FFECAA;
-    padding-left: 15px;
+    border: #FFECAA solid 3px;
+    padding: 5px 15px;
+}
+
+.tab tbody a:hover{
+    background-color: #FFF;
+    border: #FFECAA solid 3px;
+    padding: 5px 15px;
 }
 
 .tab img{
@@ -395,33 +397,6 @@ button:hover {
     top: 5px;
     width: 13px;
 }
-
-.Rbutton { 
-    position: relative;
-    top: 20px;
-}
-
-.Rbutton :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-}
-
-.Rbutton button {
-    min-width: 200px;
-    display: block;
-    max-width: 300px;
-    margin: auto;
-}
-
-.Rbutton button :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-}
-
 
 .header-2 {
     width: 100%;

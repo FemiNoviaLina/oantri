@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri Business Partner</title>
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <link rel="stylesheet" href="../css/business_queue_all.css" />
+        <!-- Jadi ini untuk icon "cari" di header versi 2 butuh import dari sini, 
+        kalau header versi 1 tidak perlu ini sih -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
+        <div class="container">
+            <!-- HEADER VERSI 3: Buat business partner -->
+            <header>
+                <a href="../index.html"
+                    ><img src="../img/logo.png" class="logo"
+                /></a>
+                <p class="partner">Business Partner Oantri</p>
+                <nav>
+                    <ul id="menuList">
+                        <!-- Kalo pas di pagenya, tambah class="active"-->
+                        <li><a href="bussiness_profile.html">Profil</a></li>
+                        <li><a href="business_queue.html" class="active">Antrian</a></li>
+                        <li><a href="business_settings.html">Pengaturan</a></li>
+                        <li>
+                            <a href="business_help.html">Bantuan</a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="outline-li"
+                                >Keluar</a
+                            >
+                        </li>
+                </nav>
+                <!-- Nah ini icon buat "cari" -->
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+                <!-- Icon menu ini buat tampilan responsive-nya -->
+            </header>
+
+            <div class="warning">
+                Hi, Admin Oantri!
+                <br>
+                Silahkan mengakses halaman ini 
+                <br>
+                melalui perangkat komputer Anda.
+                <br>
+                Terima kasih ^^
+            </div>
+
+            <div class="body_container">
+                <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+
+                <table class="tabell">
+                    <tr>
+                        <td style="padding: 30px;">
+                            <h1>Vitamin Infusion</h1>
+                        </td>
+                        <td style="padding: 20px;">
+                            <input
+                                type="date"
+                                name="begin"
+                                placeholder="dd-mm-yyyy"
+                                value="2021-12-18"
+                                min="2021-12-17"
+                                max="2022-12-17"
+                                style="padding: 20px;"
+                            />
+                        </td>
+                        <td><h2>4 Antrian Tersisa</h2></td>
+                        <td>
+                            <button>Tutup Antrian Hari Ini</button>
+                            <br />
+                            <button>Hapus Layanan Ini</button>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="isi">
+                    <table class="tab">
+                        <thead>
+                            <tr>
+                                <th>Nomor Antrian</th>
+                                <th>Nama</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>FT-1</td>
+                                <td>Mariana Sherenita</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Selesai</option>
+                                        <option value="1">Menunggu</option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">
+                                            Sedang dilayani
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-2</td>
+                                <td>John Doe</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Terlewat</option>
+                                        <option value="1">Menunggu</option>
+                                        <option value="2">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-3</td>
+                                <td>Shania Nabilah</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="1">Menunggu</option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-4</td>
+                                <td>Claudia Hana</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-5</td>
+                                <td>Derick Joe</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-6</td>
+                                <td>Gracia Shannon</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>FT-7</td>
+                                <td>Hyce Siegren</td>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="">Menunggu</option>
+                                        <option value="1">
+                                            Sedang dilayani
+                                        </option>
+                                        <option value="2">Terlewat</option>
+                                        <option value="3">Selesai</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="info">
+                        <tr>
+                            <td><h3 class="sub-info">Sedang dilayani:</h3></td>
+                        </tr>
+                        <tr>
+                            <td class="now-queue">
+                                <h1>FT-3</h1>
+                                <h2>Shania Nabilah</h2>
+                            </td>
+                            <td class="countdown">
+                                <h3>Waktu tersisa</h3>
+                                <input type="number" value="59" style="text-align: center;"/>
+                                <h1>:</h1>
+                                <input type="number" value="30" style="text-align: center;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>Selanjutnya</button>
+                            </td>
+                            <td>
+                                <button>Lewati</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3 class="sub-info">Estimasi waktu pelayanan:</h3></td>
+                        </tr>
+                        <tr>
+                            <td class="countdown">
+                                <input type="number" value="60" style="text-align: center;"/>
+                                <h2>menit</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button>Ubah</button></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            <!-- End body_container -->
+        </div>
+        <!-- End container -->
+
+        <!-- Script ini biar pas tampilan responsive, headernya berubah jadi list,
+        yang bisa dilihat pas icon menu diklik -->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

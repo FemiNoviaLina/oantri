@@ -236,11 +236,6 @@ button:hover {
         position: absolute;
         top: 60px;
     }
-
-    .Rbutton{
-        
-        
-    }
 }
 
 @media screen and (max-device-width: 768px) {
@@ -264,36 +259,36 @@ button:hover {
         display: inline-block;
     }
 
-    /* .body-profil2 .body-pro img{
-        display: inline-block;
+    .body-profil2 .bodown h2{
+        display: block;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .body-profil2 .bodown img{
         float: right;
+        padding-top: 10px;
+        padding-right: 20px;
     }
 
-    .body-pro ul {
-        width: 100%;
-        background-color: #fd7558;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
+    .body-profil2 .body-pro h2 ul{
+        display: none;
+        background-color: #FD7558;
+        z-index: 10;
     }
 
-    .body-pro ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    .menu_icon {
+    .body-profil2 .body-pro h2 ul li{
         display: block;
     }
 
-    #menuList {
-        overflow: hidden;
-        transition: 0.5s;
-    } */
+    .body-profil2 .body-fil{
+        display: none;
+    }
 
+    .body-profil .tabel{
+        padding-left: 5px;
+    }
+   
 }
 
 .account {
@@ -459,6 +454,14 @@ button:hover {
     color: #ffecaa; opacity: 1;
 }
 
+.bodown h2{
+    display: none;
+}
+
+.body-profil2 .body-pro h2 ul{
+    display: none;
+    position: relative;
+}
 /* .body-pro h2{
     padding: 20px;
     text-align: left;
@@ -543,9 +546,14 @@ input[type="password"]{
     margin-right: 70px;
 }
 
+.tabel{
+    width: 100%;
+    padding-left: 25%;
+}
+
 .body-profil table {
-    margin: 40px 350px;
-    width: 870px;
+    margin: 20px 50px 10px 50px;
+   
 }
 
 .body-profil table thead th{
@@ -559,11 +567,14 @@ input[type="password"]{
 }
 
 .tab-notif{
-    margin: 10px 670px;
     height: 70px;
     border-collapse: collapse;
     border-spacing: none;
-    width: 580px;
+    width: 90%;
+}
+
+.tabel h1{
+    padding: 15px 0px 0px 50px;
 }
 
 .tab-notif tbody td {
@@ -588,8 +599,8 @@ input[type="password"]{
 }
 
 .notif-button{
-    position: relative;
-    right: -700px;
+    float: right;
+    margin: 20px 30px;
 }
 
 .body-privasi p{

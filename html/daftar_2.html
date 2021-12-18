@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oantri - Outlet</title>
+        <link rel="shortcut icon" href="../img/logo.ico" />
+        <link rel="stylesheet" href="../css/masuk.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <a href="../index.html"
+                        ><img src="../img/logo.png" class="logo"
+                    /></a>
+                </div>
+                <nav>
+                    <div class="navigation" id="menuList">
+                        <a href="#" class="active">Outlet</a>
+                        <a href="about.html">Tentang Kami</a>
+                        <a href="../index.html">Beranda</a>
+                        <a href="masuk.html">Masuk</a>
+                        <a href="daftar.html" class="outline-li">Daftar</a>
+                    </div>
+                </nav>
+                <img
+                    src="../img/menu.png"
+                    class="menu_icon"
+                    onclick="togglemenu()"
+                />
+            </header>
+
+            <div class="body_container">
+        <!-- Nah di sini buat isi page-nya, selamat bekerja
+            SEMANGATT -->
+            <img src="../img/atas.png" class="atas">
+                <div class="form_container">
+                    <h2 class="title_masuk">Verifikasi Akun</h2>
+    
+                    <form>
+
+                        <div class="box_masuk">
+                            <p>
+                                <p>Kami akan mengirimkan kode verifikasi melalui pesan WhatsApp. 
+                                    Pastikan nomor telepon Anda aktif dan sudah terdaftar pada WhatsApp.</p>  
+                            </p>  
+                        </div>
+
+                        <div class="box_masuk">
+                            <h3>Kode Verifikasi</h3>
+                            <input type="text" class="login">
+                        </div>
+    
+                        <button>
+                            <a href='daftar_3.html'>
+                            Kirim
+                            </a>
+                        </button>
+    
+                        <div>
+                            <span class="akun_masuk">
+                                Belum menerima kode verifikasi?
+                            </span>
+                            <span class="daftar_masuk">
+                                <a href="masuk.html">Kirim ulang</a>
+                            </span>
+                        </div>
+                    </form>
+                    
+                </div>
+            <img src="../img/bawah.png" class="bawah">
+        </div>
+        <!-- End body_container -->
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

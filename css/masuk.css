@@ -16,7 +16,6 @@ h1 {
     font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
-    color: #fd7558;
 }
 
 h2 {
@@ -27,71 +26,69 @@ h2 {
 
 h3 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p {
     font-size: 18px;
 }
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    overflow: center;
-}
-
 header {
     width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
     background-color: #ffecaa;
-    padding-bottom: 13px;
 }
 
 .logo {
     width: 80px;
     cursor: pointer;
-    margin: 8px 0;
+    margin: 4px 0;
+    justify-self: center;
+    display: flex;
+    align-items: center;
 }
 
-nav {
-    flex: 1;
+.logo div {
+    min-width: 380px;
+    color: #fd7558;
+    font-size: 22px;
+}
+
+.navigation a {
     text-align: center;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    list-style: none;
     display: inline-block;
-    width: 160px;
-}
-
-nav ul li a {
-    text-decoration: none;
+    box-sizing: border-box;
+    width: 130px;
+    height: 100%;
+    padding: 22.5px 0;
     color: #fd7558;
-    padding-bottom: 20px;
+    margin: 0px 5px;
 }
 
-nav ul li a:hover {
-    font-weight: 800;
-    color: #fd7558;
+.navigation a:hover {
+    font-weight: 900;
 }
 
-/* Ini buat nunjukin dia lagi di page mana */
 .active {
-    border-bottom: 6px solid #fd7558;
-    font-weight: 800;
-    color: #fd7558;
+    border-bottom: #fd7558 6px solid;
+    font-weight: 900;
 }
 
-.outline-li {
-    padding: 10px 20px;
-    background-color: #ffecaa;
+.menu_icon {
+    width: 27px;
+    cursor: pointer;
+    display: none;
+    padding: 26px 0;
+}
+
+.navigation .outline-li {
+    margin-right: 20px;
+    padding: 7px 5px;
+    width: 100px;
     border-color: #fd7558;
     border: solid;
     color: #fd7558;
@@ -106,20 +103,67 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.menu_icon {
-    width: 27px;
-    cursor: pointer;
-    display: none;
+.navigation a.cari {
+    color: #fd7558;
+    font-size: 20px;
+    padding: 0;
+    width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .navigation {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav .navigation a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation .active {
+        background-color: #fff;
+        color: #fd7558;
+    }
+
+    nav .navigation a:not(.active):hover {
+        color: #ffecaa;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+        max-height: 0px;
+    }
+
+    .outline-li {
+        color: #fff;
+    }
 }
 
 /* Untuk button */
+
 button {
     background-color: #fd7558;
     border: solid;
     color: white;
     cursor: pointer;
     transition: 0.7s;
-    margin: 30px 0;
+    margin: 40px 0;
     padding: 14px 80px;
     font-size: 20px;
 }
@@ -230,48 +274,6 @@ button:hover {
 
 .daftar_masuk:hover {
     text-decoration: underline;
-}
-
-@media only screen and (max-width: 1240px) {
-    nav ul {
-        width: 100%;
-        background-color: #fd7558;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    nav ul li a,
-    .outline-li {
-        color: #fff;
-        font-size: 16px;
-        background-color: #fd7558;
-        border: none;
-    }
-
-    nav ul li a:hover,
-    .outline-li:hover {
-        background-color: #fd7558;
-        color: #ffecaa;
-        border: none;
-    }
-
-    .menu_icon {
-        display: block;
-    }
-
-    #menuList {
-        overflow: hidden;
-        transition: 0.5s;
-    }
 }
 
 /* Header versi responsive */

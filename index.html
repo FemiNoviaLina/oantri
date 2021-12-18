@@ -36,7 +36,7 @@
                 <a href="./html/outlet.html">Outlet</a>
                 <a href="./html/about.html">Tentang Kami</a>
                 <a href="#" class="active">Beranda</a>
-                <a href="./html/masuk.html">Akun</a>
+                <a href="./html/profile.html">Akun</a>
                 <a href="./html/outlet.html" class="cari"><i class="fa fa-search"></i></a>
             </div>
         </nav>
@@ -146,6 +146,8 @@
                     menuList2.style.maxHeight = "1300px";}
             else { menuList2.style.maxHeight = "0px"; }
         }  
+
+        console.log(sessionStorage.getItem("loggedIn"));
 
         if(!window.sessionStorage.getItem("loggedIn")) {
             window.sessionStorage.setItem("loggedIn", "false");

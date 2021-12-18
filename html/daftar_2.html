@@ -60,9 +60,7 @@
                         <br>
                         <br>
     
-                        <a href='daftar_3.html' class="button">
-                            Kirim
-                        </a>
+                        <button id="daftar">Kirim</button>
     
                         <br>
                         <br>
@@ -93,6 +91,11 @@
                     menuList.style.maxHeight = "0px";
                 }
             }
+
+            document.getElementById("daftar").addEventListener("click", function () {
+                event.preventDefault();
+                window.location.href = "daftar_4.html";
+            });
         </script>
     </body>
 </html>

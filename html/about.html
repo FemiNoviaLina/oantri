@@ -12,20 +12,35 @@
     <title>Oantri</title>
 </head>
 <body style="width: 100%; height: 50vw;" >
-    <header>
-        <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+    <header id="head1">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        </div>
         <nav>
-            <ul  id="menuList">
-                <!-- Kalo pas di pagenya, tambah class="active"-->
-                <li><a href="outlet.html">Outlet</a></li>
-                <li><a href="about.html" class="active">Tentang Kami</a></li>
-                <li><a href="../index.html">Beranda</a></li>
-                <li><a href="masuk.html">Masuk</a></li>
-                <li><a href="daftar.html" class="outline-li">Daftar</a></li>
-            </ul>
+            <div class="navigation" id="menuList">
+                <a href="outlet.html">Outlet</a>
+                <a href="#" class="active">Tentang Kami</a>
+                <a href="../index.html">Beranda</a>
+                <a href="masuk.html">Masuk</a>
+                <a href="daftar_1.html" class="outline-li">Daftar</a>
+            </div>
         </nav>
         <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
-        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <header id="head2">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        </div>
+        <nav>
+            <div class="navigation" id="menuList2">
+                <a href="outlet.html">Outlet</a>
+                <a href="#" class="active">Tentang Kami</a>
+                <a href="../index.html">Beranda</a>
+                <a href="profile.html">Akun</a>
+                <a href="outlet.html" class="cari"><i class="fa fa-search"></i></a>
+            </div>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu2()">
     </header>
 
     <script>
@@ -100,6 +115,36 @@
             </div>
         </div>
     </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){     
+            if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";}
+            else { menuList.style.maxHeight = "0px"; }
+        }  
 
+        var menuList2 = document.getElementById("menuList2");
+        menuList2.style.maxHeight = "0px";
+        function togglemenu2(){     
+            if(menuList2.style.maxHeight == "0px") {
+                    menuList2.style.maxHeight = "1300px";}
+            else { menuList2.style.maxHeight = "0px"; }
+        }  
+
+        if(!window.sessionStorage.getItem("loggedIn")) {
+            window.sessionStorage.setItem("loggedIn", "false");
+        }
+
+        if(window.sessionStorage.getItem("loggedIn") == "true") {
+            document.getElementById("head1").style.display = "none";
+            document.getElementById("head2").style.display = "flex";
+        } 
+
+        else {
+            document.getElementById("head1").style.display = "flex";
+            document.getElementById("head2").style.display = "none";
+        }
+    </script>
 </body>
 </html>

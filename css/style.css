@@ -36,78 +36,120 @@ p {
 header {
     width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
     background-color: #FFF;
 }
 
 .logo {
     width: 80px;
     cursor: pointer;
-    margin: 8px 0;
+    margin: 4px 0;
+    justify-self: center;
+    display: flex;
+    align-items: center;
 }
 
-nav {
-    flex: 1;
+.logo div {
+    min-width: 380px;
+    color: #FD7558;
+    font-size: 22px;
+}
+
+
+.navigation a {
     text-align: center;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    list-style: none;
     display: inline-block;
-    width: 160px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 0 20px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 100%;
+    padding: 22.5px 0;
     color: #FD7558;
-    padding-bottom: 20px;
+    margin: 0px 5px;
 }
 
-nav ul li a:hover {
-    font-weight: 800;
-    color: #FD7558;
+.navigation a:hover {
+    font-weight: 900;
 }
 
-/* Ini buat nunjukin dia lagi di page mana */
 .active {
-    border-bottom: 6px solid #FD7558;
-    font-weight: 800;
-    color: #FD7558;
-}
-
-.cari {
-    padding-top: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #FD7558;
-    font-size: 24px;
-    margin: 0 50px;
-    width: 60px;
-}
-
-.cari:hover {
-    border-bottom: none;
-    color: #FD7558;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-.body_container {
-    background-color: white;
-    /* atur aje bos */
+    border-bottom: #FD7558 6px solid;
+    font-weight: 900;
 }
 
 .menu_icon {
     width: 27px;
     cursor: pointer;
     display: none;
+    padding: 26px 0;
+}
+
+.navigation .outline-li {
+    margin-right: 20px;
+    padding: 7px 5px;
+    width: 100px;
+    border-color: #fd7558;
+    border: solid;
+    color: #fd7558;
+    cursor: pointer;
+}
+
+.outline-li:hover {
+    border: solid;
+    border-color: #fd7558;
+    background-color: #fd7558;
+    color: #ffecaa;
+    text-decoration: none;
+}
+
+.navigation a.cari {
+    color: #fd7558;
+    font-size: 20px;
+    padding: 0;
+    width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .navigation {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav .navigation a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation .active {
+        background-color: #fff;
+        color: #fd7558;
+    }
+
+    nav .navigation a:not(.active):hover {
+        color: #ffecaa;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList, #menuList2 {
+        overflow: hidden;
+        transition: 0.5s;
+        max-height: 0px;
+    }
 }
 
 /* Untuk button */
@@ -127,44 +169,6 @@ button:hover {
     color: #FD7558;
     background-color: white;
 
-}
-
-/* Header versi responsive */
-@media only screen and (max-width: 768px) {    
-    nav ul{
-        width: 100%;
-        background-color: #FD7558;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    nav ul li a {
-        color: #FFF;
-        font-size: 16px;
-    }
-
-    nav ul li a:hover {
-        background-color: #FFF;
-        color: #FD7558;
-    }
-
-    .menu_icon {
-        display: block;
-    }
-
-    #menuList, #menuList2 {
-        overflow: hidden;
-        transition: 0.5s;
-    }
 }
 
 .banner-outlet {

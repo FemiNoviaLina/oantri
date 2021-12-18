@@ -19,34 +19,24 @@
         <!-- Container ini buat body, tujuannya biar pisah sama script di bawah -->
         <div class="container">
             <!-- HEADER VERSI 3: Buat business partner -->
-            <header>
-                <a href="../index.html"
-                    ><img src="../img/logo.png" class="logo"
-                /></a>
-                <p class="partner">Business Partner Oantri</p>
-                <nav>
-                    <ul id="menuList">
-                        <!-- Kalo pas di pagenya, tambah class="active"-->
-                        <li><a href="bussiness_profile.html">Profil</a></li>
-                        <li><a href="business_queue.html" class="active">Antrian</a></li>
-                        <li><a href="business_settings.html">Pengaturan</a></li>
-                        <li>
+            <div class="container">
+                <!-- HEADER VERSI 3: Buat business partner -->
+                <header>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+                        <div><h2>Business Partner OANTRI</h2></div>
+                    </div>
+                    <nav>
+                        <div class="navigation" id="menuList">
+                            <a href="bussiness_profile.html">Profil</a>
+                            <a href="business_queue.html" class="active">Antrian</a>
+                            <a href="business_settings.html">Pengaturan</a>
                             <a href="business_help.html">Bantuan</a>
-                        </li>
-                        <li>
-                            <a href="../index.html" class="outline-li"
-                                >Keluar</a
-                            >
-                        </li>
-                </nav>
-                <!-- Nah ini icon buat "cari" -->
-                <img
-                    src="../img/menu.png"
-                    class="menu_icon"
-                    onclick="togglemenu()"
-                />
-                <!-- Icon menu ini buat tampilan responsive-nya -->
-            </header>
+                            <a href="../index.html" class="outline-li">Keluar</a>
+                        </div>
+                    </nav>
+                    <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+                </header>
 
             <div class="warning">
                 Hi, Admin Oantri!

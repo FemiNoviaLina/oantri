@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #ffecaa;
+    background-color: #FFF;
 }
 
 .logo {
@@ -54,9 +54,10 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #fd7558;
+    color: #FD7558;
     font-size: 22px;
 }
+
 
 .navigation a {
     text-align: center;
@@ -65,7 +66,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #fd7558;
+    color: #FD7558;
     margin: 0px 5px;
 }
 
@@ -74,7 +75,7 @@ header {
 }
 
 .active {
-    border-bottom: #fd7558 6px solid;
+    border-bottom: #FD7558 6px solid;
     font-weight: 900;
 }
 
@@ -148,10 +149,6 @@ header {
         overflow: hidden;
         transition: 0.5s;
         max-height: 0px;
-    }
-
-    .outline-li {
-        color: #fff;
     }
 }
 

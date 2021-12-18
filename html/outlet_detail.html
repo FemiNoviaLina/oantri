@@ -13,23 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+    <header id="head1">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        </div>
         <nav>
-            <ul id="menuList">
-                <!-- Kalo pas di pagenya, tambah class="active"-->
-                <li><a href="outlet.html">Outlet</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="profile.html" class="active">Akun</a></li>
-            </ul>
+            <div class="navigation" id="menuList">
+                <a href="#" class="active">Outlet</a>
+                <a href="about.html">Tentang Kami</a>
+                <a href="../index.html">Beranda</a>
+                <a href="masuk.html">Masuk</a>
+                <a href="daftar.html" class="outline-li">Daftar</a>
+            </div>
         </nav>
-        <!-- Nah ini icon buat "cari" -->
-        <a href="outlet.html" class="cari">
-            <i class="fa fa-search"></i>
-        </a>
         <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
-        <!-- Icon menu ini buat tampilan responsive-nya -->
+    </header>
+    <header id="head2">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        </div>
+        <nav>
+            <div class="navigation" id="menuList2">
+                <a href="#" class="active">Outlet</a>
+                <a href="about.html">Tentang Kami</a>
+                <a href="../index.html">Beranda</a>
+                <a href="masuk.html">Masuk</a>
+                <a href="outlet.html" class="cari"><i class="fa fa-search"></i></a>
+            </div>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu2()">
     </header>
     <div class="outlet-detail">
         <div class="outlet-info">
@@ -91,6 +103,36 @@
                     menuList.style.maxHeight = "1300px";}
             else { menuList.style.maxHeight = "0px"; }
         }  
+
+        var menuList2 = document.getElementById("menuList2");
+        menuList2.style.maxHeight = "0px";
+        function togglemenu2(){     
+            if(menuList2.style.maxHeight == "0px") {
+                    menuList2.style.maxHeight = "1300px";}
+            else { menuList2.style.maxHeight = "0px"; }
+        }  
+
+        if(!window.sessionStorage.getItem("loggedIn")) {
+            window.sessionStorage.setItem("loggedIn", "false");
+        }
+
+        if(window.sessionStorage.getItem("loggedIn") == "true") {
+            document.getElementById("head1").style.display = "none";
+            document.getElementById("head2").style.display = "flex";
+        } 
+
+        else {
+            document.getElementById("head1").style.display = "flex";
+            document.getElementById("head2").style.display = "none";
+        } 
+
+        function showCategoryFilter() {
+            document.getElementById("category-filter").classList.toggle("show");
+        }
+
+        function showLocationFilter() {
+            document.getElementById("location-filter").classList.toggle("show");
+        }
     </script>
     <script src="../js/script2.js"></script>
 </body>

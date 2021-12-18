@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oantri</title>
     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="shortcut icon" href="../img/logo.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
     <div class="container">
-        <header>
-            <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
-            <nav>
-                <ul id="menuList">
-                    <!-- Kalo pas di pagenya, tambah class="active"-->
-                    <li><a href="outlet.html">Outlet</a></li>
-                    <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="../index.html">Beranda</a></li>
-                    <li><a href="profile.html" class="active">Akun</a></li>
-                </ul>
-            </nav>
-            <!-- Nah ini icon buat "cari" -->
-            <a href="outlet.html" class="cari">
-                <i class="fa fa-search"></i>
-            </a>
-            <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
-            <!-- Icon menu ini buat tampilan responsive-nya -->
-        </header>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+        </div>
+        <nav>
+            <div class="navigation" id="menuList">
+                <a href="outlet.html">Outlet</a>
+                <a href="about.html">Tentang Kami</a>
+                <a href="../index.html">Beranda</a>
+                <a href="profile.html">Akun</a>
+                <a href="outlet.html" class="cari"><i class="fa fa-search"></i></a>
+            </div>
+        </nav>
+        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
+    </header>
     <div class="separate">
         <div class="nav-body2">
         </div>
@@ -38,50 +36,44 @@
                     <li><a href="riwayat.html" class="active">Riwayat Antrian</a></li>
                 </ul>
             </div>
-            <div class="antri">
-                <h2>Riwayat Antrian John Doe</h2>
-            </div>
-            <table class="tab">
-                <thead>
-                    <tr>
-                        <th>Waktu</th>
-                        <th>Nama Outlet</th>
-                        <th>Nomor Antrian</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01/11/2021 <br>13.00</td>
-                        <td>Sebuah Petshop di Wilayah Cibubur</td>
-                        <td><p><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></p></p></td>
-                    </tr>
-                    <tr>
-                        <td>01/11/2021 <br>13.00</td>
-                        <td>Sebuah Petshop di Wilayah Cibubur</td>
-                        <td><p><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></p></td>
-                    </tr>
-                    <tr>
-                        <td>01/11/2021 <br>13.00</td>
-                        <td>Sebuah Petshop di Wilayah Cibubur</td>
-                        <td><p><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></p></td>
-                    </tr>
-                    <tr>
-                        <td>01/11/2021 <br>13.00</td>
-                        <td>Sebuah Petshop di Wilayah Cibubur</td>
-                        <td>
-                            <div>
-                             <p><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>01/11/2021 <br>13.00</td>
-                        <td>Sebuah Petshop di Wilayah Cibubur</td>
-                        <td><p>PET - 202020 <img src="../img/Vector 16.png"></p></td>
-                    </tr>
-                </tbody>   
-            </table>
-            <div class = "Rbutton">
+            <div class="tabelR">
+                <h1>Riwayat Antrian John Doe</h1>
+                <table class="tab">
+                    <thead>
+                        <tr>
+                            <th>Waktu</th>
+                            <th>Nama Outlet</th>
+                            <th>Nomor Antrian</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/11/2021 <br>13.00</td>
+                            <td>Sebuah Petshop di Wilayah Cibubur</td>
+                            <td><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>01/11/2021 <br>13.00</td>
+                            <td>Sebuah Petshop di Wilayah Cibubur</td>
+                            <td><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>01/11/2021 <br>13.00</td>
+                            <td>Sebuah Petshop di Wilayah Cibubur</td>
+                            <td><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>01/11/2021 <br>13.00</td>
+                            <td>Sebuah Petshop di Wilayah Cibubur</td>
+                            <td><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></td>
+                        </tr>
+                        <tr>
+                            <td>01/11/2021 <br>13.00</td>
+                            <td>Sebuah Petshop di Wilayah Cibubur</td>
+                            <td><a href="queue_detail.html">PET - 202020 <img src="../img/Vector 16.png"></a></td>
+                        </tr>
+                    </tbody>   
+                </table>
                 <button>Tampilkan Lebih Banyak</button>
             </div>
         </div>

@@ -13,34 +13,21 @@
 <body>
     <div class="container">
         <header>
-            <a href="../index.html"><img src="../img/logo.png" class="logo"></a>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" class="logo"/></a>
+            </div>
             <nav>
-                <ul id="menuList">
-                    <!-- Kalo pas di pagenya, tambah class="active"-->
-                    <li><a href="outlet.html">Outlet</a></li>
-                    <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="../index.html">Beranda</a></li>
-                    <li><a href="profile.html" class="active">Akun</a></li>
-                </ul>
+                <div class="navigation" id="menuList">
+                    <a href="#" class="active">Outlet</a>
+                    <a href="about.html">Tentang Kami</a>
+                    <a href="../index.html">Beranda</a>
+                    <a href="masuk.html">Masuk</a>
+                    <a href="../outlet.html" class="cari"><i class="fa fa-search"></i></a>
+                </div>
             </nav>
-            <!-- Nah ini icon buat "cari" -->
-            <a href="outlet.html" class="cari">
-                <i class="fa fa-search"></i>
-            </a>
             <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
-            <!-- Icon menu ini buat tampilan responsive-nya -->
         </header>
         <div class = 'maindown'>
-            <div class="body-profil2">
-                <h2>
-                    <ul>
-                        <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
-                        <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
-                        <li><a href="notif.html" class="hide">Notifikasi</a></li>
-                        <li><a href="privasi.html" class="pointer">Pengaturan Privasi</a></li>
-                    </ul> 
-                </h2>
-            </div>
             <div class="body-profil">
                 <div class="header-2">
                     <img src="../img/left-arrow.png" class="icon_header2">
@@ -50,10 +37,32 @@
                         </ul>
                     </h2>
                 </div>
-                <div class="edit">
-                    <h1>Pengaturan Privasi</h1>
+                <div class="body-profil2">
+                    <div class="bodown" onclick="dropShow()">
+                        <h2>Pengaturan Privasi<img src="../img/dropdown.png" ></h2> 
+                    </div>
+                    <div class="body-pro">
+                        <h2>
+                            <ul id="sub">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
+                    <div class="body-fil">
+                        <h2>
+                            <ul id="sub1">
+                                <li><a href="Pengaturan.html" class="hide">Edit Profil</a></li>
+                                <li><a href="ubahpass.html" class="hide">Ubah Password</a></li>
+                                <li><a href="notif.html" class="hide">Notifikasi</a></li>
+                                <li><a href="privasi.html" class="pointer">Pengaturan Privasi</a></li>
+                            </ul> 
+                        </h2>
+                    </div>
                 </div>
                 <div class="body-privasi">
+                    <h1>Pengaturan Privasi</h1>
                     <p>
                         Kami ingin meningkatkan pengalaman Anda sekaligus menghargai privasi Anda. 
                         Pada halaman pengaturan privasi ini Anda dapat mengubah kontrol permission 
@@ -61,15 +70,14 @@
                     </p>
                     <table class="tab">
                         <tbody>
-                            <tr class="switch">
+                            <tr>
                                 <td>Izinkan Oantri mengakses lokasi Anda.</td>
-                                <td><input type="checkbox"></td>
-                                <span class="slider"></span>
+                                <td><input class="input" type="checkbox" name="switch" id="switch"><label for="switch"></label></td>
                             </tr>
-                            <tr class="switch">
+                            <tr>
                                 <td>Izinkan Oantri menggunakan data histori antri Anda</td>
-                                <td><input type="checkbox"></td>
-                                <span class="slider"></span>
+                                <td><input class="input" type="checkbox" name="switch1" id="switch1"><label for="switch1"></label></td>
+                                
                             </tr>
                         </tbody>   
                     </table>
@@ -87,6 +95,15 @@
                 if(menuList.style.maxHeight == "0px") {
                         menuList.style.maxHeight = "1300px";}
                 else { menuList.style.maxHeight = "0px"; }
+            }    
+            function dropShow() {
+            var sublist = document.getElementById("sub").style.display;
+            if(sublist == "none"){
+                document.getElementById("sub").style.display = "block";
+            }else{
+                document.getElementById("sub").style.display = "none";
+            }
+            console.log(document.getElementById("sub"));
             }  
         </script>
 </body>

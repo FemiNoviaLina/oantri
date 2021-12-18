@@ -43,87 +43,123 @@ li{
     overflow: center;
 }
 
-/* Ini buat nunjukin dia lagi di page mana */
-.active {
-    border-bottom: solid;
-    position: relative;
-    border-bottom-width: 6px;
-    border-bottom-color: #FD7558;
-    font-weight: 800;
-    color: #FD7558;
-}
-
 header {
     width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    background-color: #FFECAA;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    background-color: #FFF;
 }
 
 .logo {
     width: 80px;
     cursor: pointer;
-    margin: 8px 0;
+    margin: 4px 0;
+    justify-self: center;
+    display: flex;
+    align-items: center;
 }
 
-nav {
-    flex: 1;
+.logo div {
+    min-width: 380px;
+    color: #FD7558;
+    font-size: 22px;
+}
+
+
+.navigation a {
     text-align: center;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    list-style: none;
     display: inline-block;
-    width: 160px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    padding: 0 20px;
+    box-sizing: border-box;
+    width: 130px;
+    height: 100%;
+    padding: 22.5px 0;
     color: #FD7558;
-    padding-bottom: 9px;
+    margin: 0px 5px;
 }
 
-nav ul li a:hover {
-    font-weight: 800;
-    color: #FD7558;
+.navigation a:hover {
+    font-weight: 900;
 }
 
-/* KHUSUS HEADER VERSI 2 */
-.cari {
-    padding-top: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #FD7558;
-    font-size: 24px;
-    margin: 0 50px;
-    width: 60px;
-}
-
-.cari:hover {
-    border-bottom: none;
-    color: #FD7558;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-/* YAK SEGITU AJA */
-
-.body_container {
-    background-color: white;
-    /* atur aje bos */
+.active {
+    border-bottom: #FD7558 6px solid;
+    font-weight: 900;
 }
 
 .menu_icon {
     width: 27px;
     cursor: pointer;
     display: none;
+    padding: 26px 0;
+}
+
+.navigation .outline-li {
+    margin-right: 20px;
+    padding: 7px 5px;
+    width: 100px;
+    border-color: #fd7558;
+    border: solid;
+    color: #fd7558;
+    cursor: pointer;
+}
+
+.outline-li:hover {
+    border: solid;
+    border-color: #fd7558;
+    background-color: #fd7558;
+    color: #ffecaa;
+    text-decoration: none;
+}
+
+.navigation a.cari {
+    color: #fd7558;
+    font-size: 20px;
+    padding: 0;
+    width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav .navigation {
+        width: 100%;
+        background-color: #fd7558;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav .navigation a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation .active {
+        background-color: #fff;
+        color: #fd7558;
+    }
+
+    nav .navigation a:not(.active):hover {
+        color: #ffecaa;
+        border: none;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+        max-height: 0px;
+    }
 }
 
 /* Untuk button */
@@ -143,44 +179,6 @@ button:hover {
     color: #FD7558;
     background-color: white;
 
-}
-
-/* Header versi responsive */
-@media only screen and (max-width: 768px) {    
-    nav ul{
-        width: 100%;
-        background-color: #FD7558;
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: none;
-    }
-
-    nav ul li a {
-        color: #FFF;
-        font-size: 16px;
-    }
-
-    nav ul li a:hover {
-        background-color: #FFF;
-        color: #FD7558;
-    }
-
-    .menu_icon {
-        display: block;
-    }
-
-    #menuList {
-        overflow: hidden;
-        transition: 0.5s;
-    }
 }
 
 .nav-header2 {
@@ -208,6 +206,11 @@ button:hover {
     width: 100%;
 }
 
+.tabelR button {
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
     .nav-body2 {
         display: none;
@@ -231,10 +234,12 @@ button:hover {
         right: -3%;
     }
 
-    .tab{
-        width: 100%;
-        position: absolute;
-        top: 60px;
+    .body-profil .tabel{
+        padding-left: 5px;
+    }
+
+    .nav-body .tabelR{
+        padding: 0px 0px 0px 0px;
     }
 }
 
@@ -291,6 +296,14 @@ button:hover {
    
 }
 
+@media screen and (max-device-width: 768px){
+    .body-profil .body-privasi{
+        padding: 0px 0px 0px 0px;
+    }
+
+   
+}
+
 .account {
     display: inline-block;
     padding: 10px 30px;
@@ -306,27 +319,11 @@ button:hover {
     margin-top: 40px;
 }
 
-/* .account-button :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-} */
-
 .account-button button {
     min-width: 200px;
     display: block;
     max-width: 300px;
 }
-
-/* .account-button button :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-} */
-
-
 
 .account h1, h2 {
     border-bottom: black solid 1px;
@@ -343,10 +340,20 @@ button:hover {
     padding-top: 10px;
 }
 
-.tab {
-    float: left;
+.tabelR h1{
+    padding: 10px 0px 0px 25px;
+}
 
-    height: 70px;
+.tabelR{
+    width: 100%;
+    padding-left: 50%;
+}
+
+.nav-body table{
+    margin: 20px 0px 30px 30px;
+}
+
+.tab {
     border-collapse: collapse;
     border-spacing: none;
     width: 580px;
@@ -368,9 +375,21 @@ button:hover {
     border-color: #FD7558;
 }
 
-.tab tbody p{
+/* .tab tbody p{
     background-color: #FFECAA;
     padding-left: 15px;
+} */
+
+.tab tbody a{
+    background-color: #FFECAA;
+    border: #FFECAA solid 3px;
+    padding: 5px 15px;
+}
+
+.tab tbody a:hover{
+    background-color: #FFF;
+    border: #FFECAA solid 3px;
+    padding: 5px 15px;
 }
 
 .tab img{
@@ -378,33 +397,6 @@ button:hover {
     top: 5px;
     width: 13px;
 }
-
-.Rbutton { 
-    position: relative;
-    top: 20px;
-}
-
-.Rbutton :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-}
-
-.Rbutton button {
-    min-width: 200px;
-    display: block;
-    max-width: 300px;
-    margin: auto;
-}
-
-.Rbutton button :hover {
-    border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
-    background-color: white;
-}
-
 
 .header-2 {
     width: 100%;
@@ -462,17 +454,6 @@ button:hover {
     display: none;
     position: relative;
 }
-/* .body-pro h2{
-    padding: 20px;
-    text-align: left;
-}
-
-.body-pro img{
-    padding: 0px;
-    width: 40px;
-    cursor: pointer;
-    display: inline;
-} */
 
 .pointer{
     position: relative;
@@ -603,11 +584,67 @@ input[type="password"]{
     margin: 20px 30px;
 }
 
-.body-privasi p{
-    margin-top: 50px;
-    margin-left: 350px;
+.body-privasi{
+    width: 100%;
+    padding-left: 25%;
 }
-  
+
+.body-privasi h1{
+    padding: 15px 0px 0px 50px;
+}
+
+.body-privasi p{
+   padding: 15px 0px 0px 50px;
+}
+
+.body-privasi .tab{
+    width: 92%;
+}
+
 .body-privasi tbody{
     border-top: solid #FD7558;
+}
+
+.input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+label {
+    width: 55px;
+    height: 30px;
+    display:block;
+    background-color: #C4C4C4;
+    border-radius: 100px;
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #C4C4C450;
+}
+label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    border: solid #FD7558;
+    position: absolute;
+    border-radius: 70px;
+    top: 3px;
+    left: 6px;
+    transition: 0.5s;
+}
+
+.input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.input:checked + label {
+    background-color: #FD7558;
+}
+
+label:active:after {
+    width: 30px;
 }

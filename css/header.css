@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
@@ -13,13 +13,13 @@ a {
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
 }
 
 h2 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -40,7 +40,12 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #FFECAA;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -54,10 +59,9 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #FD7558;
+    color: #fd7558;
     font-size: 22px;
 }
-
 
 .navigation a {
     text-align: center;
@@ -66,7 +70,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #FD7558;
+    color: #fd7558;
     margin: 0px 5px;
 }
 
@@ -75,7 +79,7 @@ header {
 }
 
 .active {
-    border-bottom: #FD7558 6px solid;
+    border-bottom: #fd7558 6px solid;
     font-weight: 900;
 }
 
@@ -151,4 +155,3 @@ header {
         max-height: 0px;
     }
 }
-

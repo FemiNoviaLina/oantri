@@ -51,6 +51,11 @@ header {
     flex-wrap: nowrap;
     padding: 0 15px;
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .logo {

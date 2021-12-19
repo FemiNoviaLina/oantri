@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
@@ -13,13 +13,13 @@ a {
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
 }
 
 h2 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .logo {
@@ -54,10 +54,9 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #FD7558;
+    color: #fd7558;
     font-size: 22px;
 }
-
 
 .navigation a {
     text-align: center;
@@ -66,7 +65,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #FD7558;
+    color: #fd7558;
     margin: 0px 5px;
 }
 
@@ -75,7 +74,7 @@ header {
 }
 
 .active {
-    border-bottom: #FD7558 6px solid;
+    border-bottom: #fd7558 6px solid;
     font-weight: 900;
 }
 
@@ -100,7 +99,7 @@ header {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -137,7 +136,7 @@ header {
     }
 
     nav .navigation a:not(.active):hover {
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 
@@ -145,7 +144,8 @@ header {
         display: block;
     }
 
-    #menuList, #menuList2 {
+    #menuList,
+    #menuList2 {
         overflow: hidden;
         transition: 0.5s;
         max-height: 0px;
@@ -155,40 +155,39 @@ header {
 /* Untuk button */
 button {
     padding: 5px 15px;
-    background-color: #FD7558;
+    background-color: #fd7558;
     border: solid;
     font-size: 18pt;
     color: white;
     cursor: pointer;
-    transition: .7s;
+    transition: 0.7s;
 }
 
 button:hover {
     border: solid;
-    border-color: #FD7558;
-    color: #FD7558;
+    border-color: #fd7558;
+    color: #fd7558;
     background-color: white;
-
 }
 
 .banner-outlet {
-    background-image: url('../img/banner1.png');
+    background-image: url("../img/banner1.png");
     background-size: cover;
     text-align: center;
 }
 
 .banner-outlet h2 {
-    color: #FD7558;
+    color: #fd7558;
 }
 
-.banner-outlet img{
+.banner-outlet img {
     display: block;
     margin: 0 auto;
     padding: 50px 10px 20px 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .banner-outlet img{
+    .banner-outlet img {
         width: 300px;
         padding: 50px 10px 20px 10px;
     }
@@ -205,7 +204,7 @@ button:hover {
     justify-content: center;
 }
 
-.banner-outlet form input[type="text"]{
+.banner-outlet form input[type="text"] {
     width: 30%;
     min-width: 150px;
     padding: 10px;
@@ -224,7 +223,8 @@ button:hover {
     width: 25px;
 }
 
-.outlet-filter, .outlet-cards {
+.outlet-filter,
+.outlet-cards {
     height: 100%;
     overflow: auto;
     padding: 20px 20px;
@@ -330,14 +330,14 @@ button:hover {
 .card img {
     height: 150px;
     width: 225px;
-    border: #FD7558 3px solid;
+    border: #fd7558 3px solid;
     display: block;
 }
 
 .card .card-text {
     width: 225px;
     height: 50px;
-    background-color: #FFECAA;
+    background-color: #ffecaa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,24 +352,25 @@ button:hover {
     justify-content: center;
     margin: 15px 0;
 }
-  
+
 .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
 }
-  
+
 .pagination a.active {
-    background-color: #FD7558;
+    background-color: #fd7558;
     color: white;
 }
-  
+
 .pagination a:hover:not(.active) {
     background-color: #ddd;
 }
 
-.outlet-info, .new-queue {
+.outlet-info,
+.new-queue {
     height: 100%;
     overflow: auto;
     display: inline-block;
@@ -411,7 +412,7 @@ button:hover {
     display: inline-block;
 }
 
-.outlet-location .map img{
+.outlet-location .map img {
     width: 100%;
     height: auto;
 }
@@ -421,7 +422,7 @@ button:hover {
     padding-left: 10px;
 }
 
-.outlet-info .outlet-location  {
+.outlet-info .outlet-location {
     display: block;
 }
 
@@ -470,8 +471,8 @@ button:hover {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: #FD7558 3px solid;
-    background-color: #FFECAA;
+    border: #fd7558 3px solid;
+    background-color: #ffecaa;
 }
 
 .new-queue .estimasi {
@@ -510,14 +511,14 @@ button:hover {
     margin: 30px auto;
     width: 40%;
     min-width: 300px;
-    background-color: #FFECAA;
-    border: #FD7558 3px solid;
+    background-color: #ffecaa;
+    border: #fd7558 3px solid;
 }
 
 .current-queue {
     width: 60%;
     margin: 10px auto;
-    background-color: #FFF;
+    background-color: #fff;
     padding: 10px;
 }
 

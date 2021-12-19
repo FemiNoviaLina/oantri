@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .logo {
@@ -54,10 +54,9 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #FD7558;
+    color: #fd7558;
     font-size: 22px;
 }
-
 
 .navigation a {
     text-align: center;
@@ -66,7 +65,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #FD7558;
+    color: #fd7558;
     margin: 0px 5px;
 }
 
@@ -75,7 +74,7 @@ header {
 }
 
 .active {
-    border-bottom: #FD7558 6px solid;
+    border-bottom: #fd7558 6px solid;
     font-weight: 900;
 }
 
@@ -100,7 +99,7 @@ header {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -137,7 +136,7 @@ header {
     }
 
     nav .navigation a:not(.active):hover {
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 

@@ -193,6 +193,7 @@ header {
     margin: 0 auto;
     padding: 15px 50px;
     font-size: 20px;
+    text-align: center;
 }
 
 .button:hover {

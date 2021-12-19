@@ -25,33 +25,54 @@
                 <a href="profile.html">Akun</a>
                 <a href="outlet.html" class="cari"><i class="fa fa-search"></i></a>
             </div>
-        </nav>
-        <img src="../img/menu.png" class="menu_icon" onclick="togglemenu()">
-    </header>
-    <div class="queue-container">
-        <div class="queue-detail">
-            <p>Nomor antrian Anda di : </p>
-            <h1>Salon Royal</h1>
-            <h2>BBB-045</h2>
-            <h3>Perkiraan waktu Anda : </h3>
-            <h3>Jumat, 5 November 2021 pukul 16.00</h3>
-            <div class="current-queue">
-                <h3>BBB - 040</h3>
+            <nav>
+                <div class="navigation" id="menuList">
+                    <a href="outlet.html" class="active">Outlet</a>
+                    <a href="about.html">Tentang Kami</a>
+                    <a href="../index.html">Beranda</a>
+                    <a href="masuk.html">Akun</a>
+                    <a href="outlet.html" class="cari"
+                        ><i class="fa fa-search"></i
+                    ></a>
+                </div>
+            </nav>
+            <img
+                src="../img/menu.png"
+                class="menu_icon"
+                onclick="togglemenu()"
+            />
+        </header>
+        <div class="queue-container">
+            <div class="queue-detail">
+                <p>Nomor antrian Anda di :</p>
+                <h1>Salon Royal</h1>
+                <h2>BBB-045</h2>
+                <h3>Perkiraan waktu Anda :</h3>
+                <h3>Jumat, 5 November 2021 pukul 16.00</h3>
+                <div class="current-queue">
+                    <h3>BBB - 040</h3>
+                </div>
+                <p>5 nomor lagi hingga giliran Anda</p>
+                <h3>
+                    Karena estimasi waktu giliran bisa lebih cepat atau lambat,
+                    harap selalu update halaman ini
+                </h3>
+                <h3>
+                    Harap datang maksimal 5 menit waktu perkiraan giliran anda
+                </h3>
             </div>
-            <p>5 nomor lagi hingga giliran Anda</p>
-            <h3>Karena estimasi waktu giliran bisa lebih cepat atau lambat, harap selalu update halaman ini</h3>
-            <h3>Harap datang maksimal 5 menit waktu perkiraan giliran anda </h3>
         </div>
-    </div>
-    <script>
-        var menuList = document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-        function togglemenu(){     
-            if(menuList.style.maxHeight == "0px") {
-                    menuList.style.maxHeight = "1300px";}
-            else { menuList.style.maxHeight = "0px"; }
-        }  
-    </script>
-    <script src="../js/script3.js"></script>
-</body>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "1300px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <script src="../js/script3.js"></script>
+    </body>
 </html>

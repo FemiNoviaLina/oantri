@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
@@ -13,13 +13,13 @@ a {
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
 }
 
 h2 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -46,7 +46,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .logo {
@@ -60,10 +60,9 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #FD7558;
+    color: #fd7558;
     font-size: 22px;
 }
-
 
 .navigation a {
     text-align: center;
@@ -72,7 +71,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #FD7558;
+    color: #fd7558;
     margin: 0px 5px;
 }
 
@@ -81,7 +80,7 @@ header {
 }
 
 .active {
-    border-bottom: #FD7558 6px solid;
+    border-bottom: #fd7558 6px solid;
     font-weight: 900;
 }
 
@@ -106,7 +105,7 @@ header {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -143,7 +142,7 @@ header {
     }
 
     nav .navigation a:not(.active):hover {
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 
@@ -151,28 +150,28 @@ header {
         display: block;
     }
 
-    #menuList, #menuList2 {
+    #menuList,
+    #menuList2 {
         overflow: hidden;
         transition: 0.5s;
         max-height: 0px;
     }
 }
 
-@media only screen and (max-width: 768px) {    
+@media only screen and (max-width: 768px) {
     .form_container {
         padding: 40px 30px;
     }
 
     .box_masuk input {
-        width:300px;
+        width: 300px;
     }
 }
 
 /* batass */
 
-
 #judul1 {
-    padding-top: 10px ;
+    padding-top: 10px;
     width: auto;
     font-size: 40px;
 }
@@ -183,14 +182,12 @@ header {
     font-size: 20px;
 }
 
-
-
-#btn{
+#btn {
     position: relative;
     color: #fff;
-    background-color: #FD7558;
+    background-color: #fd7558;
     font-size: 20px;
-    border: 1.5px solid #FD7558;
+    border: 1.5px solid #fd7558;
     width: 60px;
     text-align: center;
     border-radius: 20px;
@@ -199,33 +196,32 @@ header {
     height: 35px;
 }
 
-#search{
+#search {
     margin-top: 30px;
 }
 
-.input{
+.input {
     width: 190px;
     font-size: 15px;
     padding: 4px 0 3px 10px;
-    border: 1.5px solid #FD7558;
+    border: 1.5px solid #fd7558;
     border-radius: 20px;
     height: 35px;
 }
 
 #btn:hover {
-    border: 1.5px solid #FD7558;
+    border: 1.5px solid #fd7558;
     background-color: white;
-    color: #FD7558;
+    color: #fd7558;
     transition: 0.5s;
 }
 
-
-.square{
+.square {
     position: relative;
     stop-opacity: inherit;
     height: 200px;
     width: 480px;
-    background-color: #FD7558;
+    background-color: #fd7558;
     opacity: 0.5;
     position: relative;
     left: 390px;
@@ -241,46 +237,42 @@ header {
     text-align: center;
 }
 
-
-
 .div1 {
     width: 100%;
     height: 20%;
     box-sizing: border-box;
 }
-  
+
 .div2 {
     width: 100%;
-    height: 50%;  
+    height: 50%;
     box-sizing: border-box;
 }
-
 
 .div3 {
     width: 100%;
-    height: 30%;  
+    height: 30%;
     box-sizing: border-box;
 }
 
-.subdiv1{
+.subdiv1 {
     float: right;
     width: 20%;
     height: 100%;
     box-sizing: border-box;
 }
 
-.subdiv2{
+.subdiv2 {
     float: right;
     width: 60%;
     height: 100%;
-    background: rgb(255, 236, 170); 
-    background: rgba(255, 236, 170, 0.5); 
+    background: rgb(255, 236, 170);
+    background: rgba(255, 236, 170, 0.5);
     color: #000000;
     box-sizing: border-box;
-    
 }
 
-.subdiv3{
+.subdiv3 {
     float: left;
     width: 20%;
     height: 100%;
@@ -289,7 +281,7 @@ header {
 
 /*page 2*/
 
-#page2{
+#page2 {
     position: relative;
     height: 560px;
     background-image: url(../img/page-2.png);
@@ -299,50 +291,50 @@ header {
 
 .div4 {
     width: 100%;
-    height: 20%;  
+    height: 20%;
     box-sizing: border-box;
 }
 
 .div5 {
     width: 100%;
-    height: 80%;  
+    height: 80%;
     box-sizing: border-box;
 }
 
-.subdiv4{
+.subdiv4 {
     height: 65%;
     box-sizing: border-box;
 }
 
-.subdiv5{
+.subdiv5 {
     height: 35%;
     box-sizing: border-box;
     font-size: 18px;
 }
 
-.hashtag{
+.hashtag {
     padding-right: 0%;
     color: white;
     text-decoration: underline;
     font-weight: 400;
 }
 
-.batas2{
+.batas2 {
     width: 50%;
     height: 100%;
     float: right;
 }
 
-.batas{
+.batas {
     position: relative;
     padding-left: 5%;
     float: left;
     width: 50%;
     height: 100%;
-    background-color: #FD7558;
+    background-color: #fd7558;
 }
 
-.baris1{
+.baris1 {
     padding-right: 13vw;
     padding-top: 75px;
     height: 55%;
@@ -350,19 +342,19 @@ header {
     float: right;
 }
 
-.baris2{
+.baris2 {
     padding-right: 13vw;
     height: 45%;
     width: 100%;
     float: right;
 }
 
-#p2{
+#p2 {
     padding-top: 25px;
     font-size: 20px;
 }
 
-.p3{
+.p3 {
     padding-top: 10px;
     font-size: 20px;
 }
@@ -372,68 +364,68 @@ div.gallery {
     margin: 3px;
     height: 150px;
     float: right;
-    border: 1.5px solid #FD7558;
-    color: #FFF;
-    background-color: #FD7558;
+    border: 1.5px solid #fd7558;
+    color: #fff;
+    background-color: #fd7558;
     font-size: 13px;
     text-align: center;
 }
 
-img.image{
+img.image {
     float: right;
     width: 130px;
     height: auto;
-    border-bottom: 1.5px solid #FD7558 ;
+    border-bottom: 1.5px solid #fd7558;
 }
 
-.desc{
+.desc {
     position: relative;
     top: 10px;
     width: 130px;
     height: 10%;
 }
 
-div.gallery:hover{
+div.gallery:hover {
     background-color: #fff;
-    color: #FD7558;
+    color: #fd7558;
     transition: 0.5s;
     cursor: pointer;
 }
 
-img.image:hover{
-    border-bottom: 1.5px solid #FD7558;
+img.image:hover {
+    border-bottom: 1.5px solid #fd7558;
 }
 
-.desc:hover{
-    color: #FD7558;
+.desc:hover {
+    color: #fd7558;
     transition: 0.5s;
 }
 
-#kes{
+#kes {
     background-color: transparent;
     border: none;
 }
 
-.button{
+.button {
     margin: 60px 25px 0 20px;
     padding: 5px 10px 5px 10px;
-    border: 1.5px solid #FD7558;
+    border: 1.5px solid #fd7558;
     border-radius: 5px;
-    background-color: #FD7558;
+    background-color: #fd7558;
     color: white;
     cursor: pointer;
     font-size: 13px;
 }
 
-.button:hover{
+.button:hover {
     background-color: white;
-    color: #FD7558;
-    border: 1.5px solid #FD7558;
+    color: #fd7558;
+    border: 1.5px solid #fd7558;
 }
 
 /*Page 3*/
 
-#page3{
+#page3 {
     position: relative;
     height: 560px;
     text-align: center;
@@ -442,29 +434,28 @@ img.image:hover{
     background-repeat: no-repeat;
 }
 
-
-#judul3{
+#judul3 {
     width: auto;
 }
 
-.subdiv6{
+.subdiv6 {
     width: 20%;
     height: 100%;
     float: left;
     box-sizing: border-box;
 }
 
-.subdiv7{
+.subdiv7 {
     padding-top: 2%;
     width: 60%;
     float: left;
     height: 100%;
     box-sizing: border-box;
-    background: rgb(255, 236, 170); 
+    background: rgb(255, 236, 170);
     background: rgba(255, 236, 170, 0.5);
 }
 
-.subdiv8{
+.subdiv8 {
     width: 20%;
     float: right;
     height: 100%;
@@ -473,115 +464,117 @@ img.image:hover{
 
 .div6 {
     width: 100%;
-    height: 20%;  
+    height: 20%;
     box-sizing: border-box;
 }
 
 .div7 {
     width: 100%;
-    height: 60%;  
+    height: 60%;
     box-sizing: border-box;
 }
 
 .div8 {
     width: 100%;
-    height: 20%;  
+    height: 20%;
     box-sizing: border-box;
 }
 
-.p4{
+.p4 {
     padding-top: 3%;
 }
 
-#cc{
+#cc {
     padding: 8px 12px 10px 8px;
     margin: 30px;
-    background-color: #FD7558;
-    border: 1.5px solid #FD7558;
+    background-color: #fd7558;
+    border: 1.5px solid #fd7558;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: 18px;
 }
 
-#cc:hover{
+#cc:hover {
     background-color: white;
-    color: #FD7558;
+    color: #fd7558;
     transition: 0.3s;
 }
 
-@media screen and (max-width: 900px){
-    .page1{
+@media screen and (max-width: 900px) {
+    .page1 {
         background-image: url(../img/page1-res.png);
     }
 
-    .subdiv1{
+    .subdiv1 {
         width: 10%;
     }
 
-    .subdiv2{
+    .subdiv2 {
         width: 80%;
     }
 
-    .subdiv3{
+    .subdiv3 {
         width: 10%;
     }
 
-    .div1{
+    .div1 {
         height: 15%;
     }
 
-    .div2{
+    .div2 {
         height: 70%;
     }
 
-    .div3{
+    .div3 {
         height: 15%;
     }
 
-    #judul1{
+    #judul1 {
         padding-top: 50px;
     }
 
-    #p1{
+    #p1 {
         font-size: 15px;
         margin-top: 20px;
     }
 
-    #search{
+    #search {
         padding-left: 45px;
     }
 
     /*page 2*/
 
-    #page2{
+    #page2 {
         background-image: url(../img/page2-res.png);
     }
 
-    .batas{
+    .batas {
         width: 100%;
         height: 50%;
     }
 
-    .batas2{
+    .batas2 {
         width: 100%;
         height: 50%;
     }
 
-    #p2, .p3, #judul2{
+    #p2,
+    .p3,
+    #judul2 {
         font-size: 15px;
     }
 
-    .subdiv4{
+    .subdiv4 {
         height: 80%;
     }
-    .subdiv5{
+    .subdiv5 {
         height: 20%;
         font-size: 12px;
         padding-top: 10px;
     }
 
-    .baris1{
+    .baris1 {
         padding-top: 20px;
         float: none;
         height: 50%;
@@ -589,7 +582,7 @@ img.image:hover{
         padding-right: 30vw;
     }
 
-    .baris2{
+    .baris2 {
         height: 50%;
         padding: 0;
         padding-right: 30vw;
@@ -600,39 +593,36 @@ img.image:hover{
         font-size: 10px;
     }
 
-    .desc{
+    .desc {
         width: 80px;
         top: 4px;
     }
-    
-    img.image{
+
+    img.image {
         float: right;
         width: 80px;
         height: auto;
     }
 
-    .button{
+    .button {
         margin: 35px 4px 0 12px;
         padding: 4px 8px 4px 8px;
         font-size: 10px;
     }
 
     /*page3*/
-    .subdiv6, .subdiv8{
+    .subdiv6,
+    .subdiv8 {
         width: 5%;
     }
 
-    .subdiv7{
+    .subdiv7 {
         width: 90%;
     }
 
-    .p4, p5, #cc{
+    .p4,
+    p5,
+    #cc {
         font-size: 15px;
     }
 }
-
-
-
-
-
-

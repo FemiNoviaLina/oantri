@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
@@ -13,13 +13,13 @@ a {
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 800;
     font-size: 36px;
 }
 
 h2 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 30px;
     font-weight: 600;
 }
@@ -46,7 +46,7 @@ header {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 15px;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 .logo {
@@ -60,10 +60,9 @@ header {
 
 .logo div {
     min-width: 380px;
-    color: #FD7558;
+    color: #fd7558;
     font-size: 22px;
 }
-
 
 .navigation a {
     text-align: center;
@@ -72,7 +71,7 @@ header {
     width: 130px;
     height: 100%;
     padding: 22.5px 0;
-    color: #FD7558;
+    color: #fd7558;
     margin: 0px 5px;
 }
 
@@ -81,7 +80,7 @@ header {
 }
 
 .active {
-    border-bottom: #FD7558 6px solid;
+    border-bottom: #fd7558 6px solid;
     font-weight: 900;
 }
 
@@ -106,7 +105,7 @@ header {
     border: solid;
     border-color: #fd7558;
     background-color: #fd7558;
-    color: #ffecaa;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -143,7 +142,7 @@ header {
     }
 
     nav .navigation a:not(.active):hover {
-        color: #ffecaa;
+        color: #fff;
         border: none;
     }
 
@@ -158,25 +157,25 @@ header {
     }
 }
 
-@media only screen and (max-width: 768px) {    
+@media only screen and (max-width: 768px) {
     .form_container {
         padding: 40px 30px;
     }
 
     .box_masuk input {
-        width:300px;
+        width: 300px;
     }
 }
 
 /* batass */
 
-.page1{
+.page1 {
     width: 100%;
     height: 48vw;
     box-sizing: border-box;
 }
 
-.div1{
+.div1 {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -189,7 +188,7 @@ header {
     text-align: center;
 }
 
-.div2{
+.div2 {
     display: flex;
     width: 50%;
     padding: 25px;
@@ -202,126 +201,123 @@ header {
 }
 
 /* sub div*/
-.card1{
+.card1 {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border: 2.5px solid #FD7558;
-    background-color: #FFF;
+    border: 2.5px solid #fd7558;
+    background-color: #fff;
     border-radius: 25px;
     box-shadow: 0px 6px 10px rgba(253, 117, 88, 0.4);
     transition: all 0.2s;
-  }
-  
+}
+
 .card1:hover {
     box-shadow: 0px 6px 10px rgba(253, 117, 88, 0.7);
     transform: scale(1.01);
-  }
+}
 
 .card2:hover {
     box-shadow: 0px 6px 10px rgba(253, 117, 88, 0.7);
     transform: scale(1.01);
-  }
-.card2{
+}
+.card2 {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border: 2.5px solid #FD7558;
+    border: 2.5px solid #fd7558;
     border-radius: 25px;
     box-shadow: 0px 6px 10px rgba(253, 117, 88, 0.4);
-    background-color: #FFF;
+    background-color: #fff;
     background-size: cover;
     transition: all 0.2s;
 }
 
 /*subdiv 1 dan 2*/
-.subdiv1{
+.subdiv1 {
     width: 100%;
     height: 75%;
     box-sizing: border-box;
-    border-radius: 22px 22px 0 0 ;
+    border-radius: 22px 22px 0 0;
     text-align: center;
-
 }
 
-.subdiv2{
+.subdiv2 {
     width: 100%;
     height: 25%;
     padding-top: 15px;
     padding-left: 1.5vw;
     box-sizing: border-box;
-    background-color: #FD7558 ;
-    border-top: 2.5px solid #FD7558;
+    background-color: #fd7558;
+    border-top: 2.5px solid #fd7558;
     border-radius: 0 0 22px 22px;
     color: #ffffff;
 }
 
-.overlay{
+.overlay {
     position: relative;
     border-radius: 20px 20px 20px 20px;
     margin: 0;
     width: 0;
-    background-color: #FD7558;
+    background-color: #fd7558;
     height: 10%;
     overflow: hidden;
     transition: 0.5s ease;
     width: 0;
-    color: #FFF;
+    color: #fff;
 }
 
-.cardlink{
+.cardlink {
     text-align: left;
     width: fit-content;
     font-size: 20px;
     cursor: pointer;
 }
 
-
-.subdiv2:hover .overlay{
+.subdiv2:hover .overlay {
     width: 35%;
 }
 
 .subdiv2:hover {
     background-color: #ffffff;
-    color: #FD7558;
+    color: #fd7558;
     transition: 0.5s;
 }
 
-.icon1{
+.icon1 {
     margin-top: 3%;
     margin-bottom: 0%;
     width: 65px;
 }
 
-#icon2{
+#icon2 {
     width: 60%;
     margin-top: 3%;
-    color: #FD7558;
+    color: #fd7558;
 }
 
-.teks{
+.teks {
     margin-top: 40px;
     font-size: 20px;
 }
 
-
 /*Biar responsive*/
-@media screen and (max-width: 900px){
-    .page1{
+@media screen and (max-width: 900px) {
+    .page1 {
         width: 100%;
         height: 86vw;
         box-sizing: border-box;
     }
 
-    .div1{
+    .div1 {
         width: 100%;
         padding-bottom: 25px;
         height: 250px;
         box-sizing: border-box;
         /* border: 1px solid yellowgreen; */
     }
-    
-    .div2{
+
+    .div2 {
         width: 100%;
         padding-bottom: 25px;
         height: 250px;
@@ -329,24 +325,24 @@ header {
         /* border: 1px solid cadetblue; */
     }
 
-    .cardlink{
+    .cardlink {
         grid-row: 4/5;
         align-self: center;
         font-size: 15px;
         /* padding-top: 5px; */
     }
 
-    .subdiv2:hover .overlay{
+    .subdiv2:hover .overlay {
         width: 28%;
         height: 10%;
     }
 
-   .subdiv2{
-       padding-top: 12px;
-   }
+    .subdiv2 {
+        padding-top: 12px;
+    }
 
-   .teks{
-       margin-top: 20px;
-       font-size: 15px;
-   }
+    .teks {
+        margin-top: 20px;
+        font-size: 15px;
+    }
 }
